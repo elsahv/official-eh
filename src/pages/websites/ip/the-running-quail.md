@@ -2,7 +2,7 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-title: "The Running Quail"
+title: "0.3"
 pubDate: 2022-07-01
 testItem1: "A collection of jt experiences. Eventually invite locals to participate"
 author: "Astro Learner"

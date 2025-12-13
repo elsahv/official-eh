@@ -2,19 +2,17 @@
 id: 4
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "The Indoor Jungle Project"
+title: "An up-and-coming web design service"
 pubDate: 2022-07-01
-testItem1: "A horror-themed botany journal"
+testItem1: " A web design subscription service for small business owners and creatives- focuses on landing pages and user stories."
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/jlhfvwh7ftd2k35r61ycj/plants5.jpg?rlkey=1arbo741cwzyyzx1t6vtvfjmm&st=1uo0cmjn&dl=0"
+  url: "https://dl.dropboxusercontent.com/scl/fi/36vnm2e663uln6akmex4d/lc.png?rlkey=lgim54nbp0u11mviylee29hyj&st=6yyb1sv2&dl=0"
   alt: "The Astro logo on a dark background with a pink glow."
-websiteUrl: "https://theindoorjungleproject.com"
+websiteUrl: "https://laughingcoyote.dev"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["astro", "blogging", "learning in public"]
 ---
-
-# visit graphic journal
 
 **2/4/25**: As of now, I'm changing this site from a full webs design service to just a blog. Lesson learned... gotta walk before I run.
 

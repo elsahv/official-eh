@@ -3,32 +3,50 @@ import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
 import SmIcons from "../components/SmIcons.jsx";
 import MainLayout from "./MainLayout.astro";
+import Header from "../components/Header.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
 <MainLayout>
-  <div id="markdown-post" class="text-lg p-5">
-    <section class="bg-">
-      <div id="flex" class="mt-5 2xl:p-5 dropshadow-3xl">
-        <h2 class="text-xl font-semibold">
-          {frontmatter.title}
-        </h2>
+  <div id="left-side" class="bg-test1 w-1/5">
+    <Header />
+  </div>
+  <div id="right-side-wrapper" class="w-4/5">
+    <div
+      id="right-side-container"
+      class="px-5 mr-5 w-[1400px] absolute top-0 right-0"
+    >
+      <div id="markdown-post" class="bg- text-lg p-5">
+        <section class="bg-">
+          <div id="flex" class="mt-5 2xl:p-5 dropshadow-3xl">
+            <div
+              class="font-semibold opacity-80 text-onyx ml-[120px] pb-5 pl-5"
+            >
+              <h2 class="text-4xl">
+                {frontmatter.title}
+              </h2>
+              <p class="mr-[120px] pt-1 opacity-80 text-lg">
+                {frontmatter.testItem1}
+              </p>
+            </div>
+            <a href={frontmatter.websiteUrl}>
+              <img
+                src={frontmatter.image.url}
+                alt=""
+                class="drop-shadow-md border border-gray-300 rounded mt-3 m-[m-50px]"
+              />
+            </a>
+          </div>
 
-        <p class="pt-1 opacity-80 text-lg">{frontmatter.testItem1}</p>
-        <img
-          src={frontmatter.image.url}
-          alt=""
-          class="drop-shadow-md border border-gray-300 rounded mt-3"
-        />
+          <div
+            id="content-wrapper"
+            class="bg- text-onyx opacity-80 text-lg mx-[150px]"
+          >
+            <slot />
+          </div>
+        </section>
       </div>
-
-      <div
-        id="container"
-        class="text-onyx lg:p-[55px] md:p-5 pt-3 p-1 px-1 md:ml-5"
-      >
-        <slot />
-      </div>
-    </section>
+    </div>
   </div>
 </MainLayout>

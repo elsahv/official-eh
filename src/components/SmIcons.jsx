@@ -17,12 +17,20 @@ const items = [
 
 const SmIcon = () => {
   return (
-    <div className="flex items-center space-x-3 text-2xl py-2 pl-1 ">
+
+    <div className="pl-1 opacity-90 text-onyx flex justify-left">
+    <div className="border-t border-b border-black flex items-center space-x-5 text-3xl px-2 py-1">
+
+
       {items.map((item, index) => (
         <div key={index} className="flex items-center space-x-2">
           <a href={item.link}>{item.icon}</a>
         </div>
       ))}
+
+
+
+    </div>
     </div>
   );
 };

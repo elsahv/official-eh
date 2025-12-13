@@ -12,14 +12,15 @@ const {
 } = frontmatter;
 ---
 
-<div id="sq" class="">
+<div id="sq" class="ml-5 mr-[50px]">
   <a href={url}>
-    <!-- <div class="">
+    <div class="">
       <div>{websiteNumber}</div>
-    </div> -->
-    <h2 class="text-xl font-semibold">
-      {title}
-    </h2>
+    </div>
+    <div class="font- opacity-80 text-onyx pb-5">
+      <h2 class="text-4xl">{title}</h2>
+      <!-- <p>12/12/25</p> -->
+    </div>
 
     <img
       src={image}
@@ -28,14 +29,16 @@ const {
     />
     <div
       id="post-excerpt"
-      class="px-5 mx-5 flex flex-col justify-center text-onyx bg-papaya mb-5 ml-1 md:pl-4 pl-1 pr-2 pt-2 pb-3 drop-shadow-md"
+      class="bg- flex text-onyx bg-papaya mb-5 pt- pb-3 drop-shadow-md"
     >
-      <p class="pt-1 opacity-80 text-lg">{testItem1}</p>
-      <div id="btn-wrapper" class="mt-2">
-        <button
-          class="bg-munsell text-aliceBlue px-2 py-1 rounded opacity-70 hover:opacity-100"
-          >read more</button
-        >
+      <div class="mt-5 px-5">
+        <p class="pt- pr-5 opacity-80 text-lg">{testItem1}</p>
+        <div id="btn-wrapper" class="mt-2">
+          <button
+            class="bg-munsell text-aliceBlue px-2 py-1 rounded opacity-70 hover:opacity-100"
+            >read more</button
+          >
+        </div>
       </div>
     </div>
   </a>
