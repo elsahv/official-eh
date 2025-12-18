@@ -2,9 +2,9 @@
 id: 4
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "A small roofing business "
+title: "The Running Quail"
 pubDate: 2022-07-01
-testItem1: "HoveyRoofing is a web design subscription service for small business owners and creatives- focuses on landing pages and user stories."
+testItem1: "PHP wp themes and websites"
 author: "Astro Learner"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/2qjwjdw2djppjpcqnbqkv/hovroof1.jpg?rlkey=04pj0osakfmuzs8uy1hybmk0z&st=cl77anbp&dl=0"

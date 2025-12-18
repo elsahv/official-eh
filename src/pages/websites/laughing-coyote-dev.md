@@ -7,7 +7,7 @@ pubDate: 2022-07-01
 testItem1: " A web design subscription service for small business owners and creatives- focuses on landing pages and user stories."
 author: "Astro Learner"
 image:
-  url: "https://dl.dropboxusercontent.com/scl/fi/36vnm2e663uln6akmex4d/lc.png?rlkey=lgim54nbp0u11mviylee29hyj&st=6yyb1sv2&dl=0"
+  url: "https://dl.dropboxusercontent.com/scl/fi/8ix7q26j1fmd43xw7rbsa/new-lc-hero.png?rlkey=w1f8tjekj5om5bwlr80vrqfda&st=k3zzu2be&dl=0"
   alt: "The Astro logo on a dark background with a pink glow."
 websiteUrl: "https://laughingcoyote.dev"
 githubUrl: "https://github.com/elsahv/-the-running-quail"

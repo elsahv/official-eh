@@ -1,0 +1,92 @@
+---
+import Gallery from "../Gallery.astro";
+import SplitSectionImgLeft from "../shared/SplitSectionImgLeft.astro";
+import SplitSectionImgRight from "../shared/SplitSectionImgRight.astro";
+
+// import DynamicAboutCTA from "../shared/DynamicAboutCta";
+import ButtonProps from "../shared/ButtonProps.astro";
+---
+
+<div id="work-wrapper" class="">
+  <section id="about-page-cta" class="bg- my-5 p-5">
+    <div id="homepage-container" class="py-5 my-5">
+      <div id="homepage-grid" class="grid md:grid-cols-2 gap-5">
+        <div id="homepagesq1" class="orange flex justify-end">
+          <div
+            id="homepage-sq1-container"
+            class="2xl:w-1/2 flex justify-center items-center bg-"
+          >
+            <!-- <DynamicAboutCTA isLoggedIn={false} username="About" /> -->
+          </div>
+        </div>
+        <div id="homepage-sq2" class="row-span-2">
+          <img
+            src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="sq-styles"
+          />
+        </div>
+        <div id="homepage-sq3" class="teal flex justify-end">
+          <ul class="2xl:w-1/2">
+            <li>
+              -address key problem your client is experiencing' Ive spent time
+              learning how to simplify the design process so you can focus on
+              your business instead
+            </li>
+            <li>-the ablity to tell your story and brand</li>
+            <li>Increased potential customers, easier to find on Google.</li>
+            <ButtonProps btn1="cta to MainGoals/ about pg" btn1Link="/about" />
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <Gallery />
+
+  <SplitSectionImgLeft
+    title="CREATIVE PHASE"
+    ,
+    paragraph1="mockup first draft"
+    ,
+    paragraph2="mockup revised, final draft"
+    ,
+    paragraph3="and creatives."
+  />
+  <SplitSectionImgRight
+    title="DEVELOPMENT PHASE"
+    ,
+    paragraph1="set up vercel temp"
+    ,
+    paragraph2="convert mockups into code"
+    ,
+    paragraph3="go over temp with client"
+    ,
+    paragraph4="final revisions"
+    ,
+    rightImg="https://images.pexels.com/photos/29531041/pexels-photo-29531041.jpeg?_gl=1*h7k50b*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NjU4MzA0NTMkbzIwJGcxJHQxNzY1ODMwNDU2JGo1NyRsMCRoMA.."
+  />
+
+  <SplitSectionImgLeft
+    title="LAUNCH PHASE"
+    ,
+    paragraph1="final review and Q&A"
+    ,
+    paragraph2="rmove local website to live server, hosting, client training"
+    ,
+    paragraph3="final payment"
+  />
+
+  <SplitSectionImgRight
+    title="DISCOVERY PHASE"
+    ,
+    paragraph1="phone calls, meetings, consultations.... research, planning, scheduling... develop site structure/sitemap ex:10 hours x $50/hr=$500"
+    ,
+    paragraph2="-What does the user want? -how to make brand provide value?"
+    ,
+    paragraph3="sitemap, wireframe site"
+    ,
+    paragraph4="aligned with your brand"
+    ,
+    rightImg="https://images.pexels.com/photos/29531041/pexels-photo-29531041.jpeg?_gl=1*h7k50b*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NjU4MzA0NTMkbzIwJGcxJHQxNzY1ODMwNDU2JGo1NyRsMCRoMA.."
+  />
+</div>

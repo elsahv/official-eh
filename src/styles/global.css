@@ -18,5 +18,50 @@ p {
 }
 
 ._shadowText2 {
-  text-shadow: 2px 2px 2px teal;
+  text-shadow: 2px 2px 1px teal;
+}
+  
+
+
+.container {
+    width: 1400px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.container .box {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.container .box img{
+    max-width: 100%;
+}
+
+/* //* 1200px mobile */
+@media (max-width: 1200px)
+ {
+    .container {
+        width:calc(100% - 40px);
+        columns: 3;
+    }
+}
+
+
+/* //* 768px mobile */
+@media (max-width: 768px)
+ {
+    .container {
+        columns: 2;
+    }
+}
+
+/* //* 480px mobile */
+@media (max-width: 480px)
+ {
+    .container {
+        columns: 1;
+    }
 }

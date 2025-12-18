@@ -1,0 +1,32 @@
+---
+const items = [
+  {
+    icon: "about",
+    link: "/#about",
+  },
+  {
+    icon: "work",
+    link: "/#work",
+  },
+  {
+    icon: "packages",
+    link: "/#packages",
+  },
+  {
+    icon: "contact",
+    link: "/#contact ",
+  },
+];
+---
+
+<div class="pl-2 opacity-90 text-onyx flex justify-left">
+  <div class="border-t border-b border-black flex flex-col py-2">
+    {
+      items.map((item) => (
+        <div class="flex items-center space-x-2 text-2xl ">
+          <a href={item.link}>{item.icon}</a>
+        </div>
+      ))
+    }
+  </div>
+</div>

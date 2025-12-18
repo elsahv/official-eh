@@ -1,0 +1,37 @@
+---
+import ButtonProps from "../shared/ButtonProps.astro";
+
+const items = [
+  {
+    listItem: "🖥️  Cozy, high-converting websites for small businesses   ",
+  },
+  {
+    listItem:
+      "🎨 I design and build fast, modern websites that help small businesses look professional, earn trust, and get more customers—without the tech headache.",
+  },
+  // {
+  //   listItem:
+  //     "⌨️ This portfolio is also my opportunity to prove that it's still possible to create a new career in web development, even when I was discouraged by all the quick changes, especially with AI... People can argue that everythings been done... but they cannot account for the amount of all amazing things that exist, things that can still be created into something new. All of my sites are proof of this, a combination of multiple niches to create maybe something simalar, but that something that is mine. And now dear reader... let me help create something that is yours!",
+  // },
+];
+---
+
+<section id="hero" class="text-onyx">
+  <div id="" class="mt-5 p-5">
+    <div id="" class="md:mr-5 mx-0 lg:p-5 p-0">
+      <div class="pb-2 font-medium text-onyx ml-5">
+        <div id="paragraph-container" class="2xl:pr-5 2xl:mr-5">
+          <div class="text-xl pl-1">
+            <p class="pt-2"></p>
+            <ul class="space-y-4 pt- list- pt-1 pl pr-1">
+              {items.map((item) => <li class="pt-1"> ✓{item.listItem}</li>)}
+            </ul>
+            <ButtonProps btn1Link="/work" btn1="view work" />
+          </div>
+          <br />
+          <!-- <Image src={LCimg} alt="" /> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

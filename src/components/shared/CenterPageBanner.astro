@@ -1,0 +1,13 @@
+---
+export interface Props {
+  BannerTitle: string;
+}
+
+const { BannerTitle } = Astro.props as Props;
+---
+
+<div class="border-b border-munsell text- py-2 pl-5 ml-5 mt-[150px]">
+  <h1 class="2xl:text-5xl md:text-4xl text-3xl pb-2 pt-2 font-bold">
+    {BannerTitle}
+  </h1>
+</div>

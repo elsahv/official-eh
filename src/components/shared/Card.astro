@@ -1,0 +1,19 @@
+---
+const frontmatter = Astro.props;
+
+const { title, testItem1 } = frontmatter;
+---
+
+<div id="card-wrapper" class="bg- text- rounded-2xl">
+  <!-- ?: CHANGE BTNS TO CATEGORIES v-->
+  <!-- ?:  ^-->
+  <a href="/test">
+    <div class="bg- md:text-lg text-sm pt-2 p-3 md:ml-3 mr-2">
+      <h3 class="font-bold underline lg:text-2xl text-lg">{title}</h3>
+      <p>7/15/25</p>
+      <p class="">
+        {testItem1} jfksljf ksdjfkdslfj dsklfjdskfjdsk f fjdskfjkla lkdskfjdskjfdsklfj
+      </p>
+    </div>
+  </a>
+</div>

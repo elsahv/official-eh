@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import ProfilePic from "../../public/eh-img.jpg";
-import SmIcons from "./SmIcons.jsx";
+import NavItems from "./NavItems.astro";
 ---
 
 <header
@@ -12,13 +12,13 @@ import SmIcons from "./SmIcons.jsx";
    max-[690px]:w-[360px]
    max-[600px]:w-[470px]
    max-[599px]:w-full
-    border-gray-500 border-r"
+    border-gray-400 border-r"
 >
   <div id="logo" class="lg:text-9xl text-8xl pb-1 opacity-90">
     <a href="/"> Elsa <br /> Hovey</a>
   </div>
   <div id="sm-icons-container" class="">
-    <SmIcons />
+    <NavItems />
   </div>
   <div class="bg- mt-[130px] mb-5">
     <Image src={ProfilePic} alt="" class="rounded w-3/4 pb-5" />

@@ -1,30 +1,52 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import About from "../components/sections/About.astro";
-import SiteCard from "../components/SiteCard.astro";
+import Hero from "../components/sections/Hero.astro";
+import Contact from "../components/sections/Contact.astro";
+// import SiteCard from "../components/SiteCard.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import Work from "../components/sections/Work.astro";
+import About from "../components/sections/About.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import Packages from "../components/Packages.astro";
 
-const allFeaturedSites = await Astro.glob("./websites/*.md");
+// const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
-  <div id="flex" class="bg-munsell">
-    <!--* LEFT SIDE v-->
-    <div id="left-side" class="bg-test1 w-1/5">
-      <Header />
-    </div>
-    <!-- *LEFT SIDE ^-->
+  <div id="RIGHT SIDE" class="w-3/4">
+    <div
+      id="right-side-container"
+      class="2xl:w-[1440px] lg:w-[700px] md:w-[500px] w- absolute top-0 right-0"
+    >
+      <Hero />
 
-    <!-- *RIGHT SIDE v-->
-    <div id="right-side-wrapper" class="w-4/5">
-      <div
-        id="right-side-container"
-        class="2xl:w-[1410px] lg:w-[700px] md:w-[500px] w- absolute top-0 right-0"
-      >
+      <!-- TODO: PROBLEM SOLVING V -->
+
+      <section id="about">
+        <CenterPageBanner BannerTitle="About" />
         <About />
-        <div id="websites-wrapper" class="mt-[350px] pt-1 px-5 bg-">
-          <div id="websites-grid" class="flex flex-col gap-y-24 mt-5 pt-5 px-5">
+      </section>
+
+      <!--  TODO:  TRUST THE (4 STEP) PROCESS V -->
+      <section id="work">
+        <CenterPageBanner BannerTitle="Work" />
+        <Work />
+      </section>
+
+      <!-- TODO:  SOCIAL PROOF V -->
+
+      <section id="packages">
+        <CenterPageBanner BannerTitle="Packages" />
+        <Packages />
+      </section>
+
+      <!-- 
+      <div id="portfolio">
+        <CenterPageBanner BannerTitle="Portfolio" />
+        <div id="portfolio-wrapper" class="opacity-80 pt-1 px-5 bg-">
+          <div
+            id="portfolio-grid"
+            class="flex flex-col gap-y-24 mt-5 pt-5 px-5"
+          >
             {
               allFeaturedSites.map((work) => (
                 <SiteCard
@@ -39,9 +61,19 @@ const allFeaturedSites = await Astro.glob("./websites/*.md");
             }
           </div>
         </div>
-        <Footer />
+      </div> -->
+
+      <!-- TODO: SOCIAL PROOF ^ -->
+
+      <!-- TODO:  a.WHATS INCLUDED, b. pricing V -->
+      <!-- a.WHATS INCLUDED, b. pricing ^-->
+
+      <!--  TODO:  a.ABOUT ME (JOURNEY), b. final cta V -->
+      <div id="contact">
+        <CenterPageBanner BannerTitle="Contact" />
+        <Contact />
       </div>
-      <!--* RIGHT SIDE ^-->
+      <!-- ABOUT ME ^ -->
     </div>
   </div>
 </MainLayout>

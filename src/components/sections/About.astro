@@ -1,43 +1,49 @@
 ---
-const items = [
-  {
-    listItem:
-      "🖥️ I'm based in Joshua Tree, CA. Its a place which inpires many colors I became interested in programming when I wanted to bring my own passion projects to life.",
-  },
-  {
-    listItem:
-      "🎨 My desire to learn js was initated by wanting to be more creative, and to build my 4 projects. By experiencing the process of building up these websites, I've gained not only an ability to work with unique colors, and to learn the skills needed to become a very ideal web developer.",
-  },
-  {
-    listItem:
-      "⌨️ My desire to learn js was initated by wanting to be more creative, and to build my 4 projects. By experiencing the process of building up these websites, I've gained not only an ability to work with unique colors, and to learn the skills needed to become a very ideal web developer.",
-  },
-];
+// import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
-<section id="about" class="text-onyx">
-  <div id="" class="mt-5 p-5">
-    <div id="" class="md:mr-5 mx-0 lg:p-5 p-0">
-      <div class="pb-2 font-medium text-onyx ml-5">
-        <div id="paragraph-container" class="2xl:pr-5 2xl:mr-5">
-          <h2 class="text-4xl py-1 font-semibold opacity-80">
-            Hi there... I'm Elsa.
-          </h2>
+<div id="about-wrapper" class="bg- lg:m-3 py- bg- flex justify-center">
+  <div
+    id="grid-About-container"
+    class="w-[1300px] grid md:grid-cols-2 grid-cols-1 gap-5 p-5 2xl:mt-[50px]"
+  >
+    <div id="img-wrapper" class="bg- lg:pr-5 lg:mr-5">
+      <img
+        src="https://images.pexels.com/photos/6962993/pexels-photo-6962993.jpeg"
+        alt=""
+        class="my-2 sq-styles"
+      />
+    </div>
 
-          <div class="text-xl pl-1">
-            <p class="pt-2">
-              ✓ Featured below are some of my select portfolio projects... A
-              collection built by weaving stories, software-development, and
-              web-design together.
-            </p>
-            <ul class="space-y-4 pt- list- pt-1 pl pr-1">
-              {items.map((item) => <li class="pt-1"> ✓{item.listItem}</li>)}
-            </ul>
-          </div>
-          <br />
-          <!-- <Image src={LCimg} alt="" /> -->
-        </div>
+    <div id="About-content-container" class="">
+      <div
+        id="About-content"
+        class="flex flex-col space-y-7 bg-munsell text-aliceBlue sq-styles text-teal p-5 mt-5 mb-5"
+      >
+        <!-- -1) attention -->
+        <!-- -2) interest -->
+        <!-- -3) desire -->
+        <!-- -4) action -->
+        <p id="" class="bg-">
+          Hi there, I'm Elsa — a web developer who specializes in small, cozy,
+          colorful websites that feel human and intentional.
+        </p>
+        <p id="" class="bg-">
+          I work with small businesses, creatives, and local brands who want a
+          site that’s easy to manage, loads fast, and actually converts visitors
+          into customers.
+        </p>
+        <p id="" class="bg-">
+          I focus on clean design, accessibility, and performance—using modern
+          tools like Astro and React—so your site stays simple, fast, and
+          future-proof.
+        </p>
+        <p>
+          <a href="/#portfolio"> Featured below</a> is my portfolio... a collection
+          built by: weaving stories, software-development, and web-design together.
+        </p>
+        <!-- <ButtonProps btn1Link="/#about-cta" btn1="go to about section" /> -->
       </div>
     </div>
   </div>
-</section>
+</div>
