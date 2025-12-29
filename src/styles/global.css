@@ -22,7 +22,7 @@ p {
 }
   
 
-
+/* *CONTAINER BOX */
 .container {
     width: 1400px;
     margin: 20px auto;
@@ -40,7 +40,7 @@ p {
     max-width: 100%;
 }
 
-/* //* 1200px mobile */
+/*  1200px mobile */
 @media (max-width: 1200px)
  {
     .container {
@@ -50,7 +50,7 @@ p {
 }
 
 
-/* //* 768px mobile */
+/*  768px mobile */
 @media (max-width: 768px)
  {
     .container {
@@ -58,10 +58,45 @@ p {
     }
 }
 
-/* //* 480px mobile */
+/*  480px mobile */
 @media (max-width: 480px)
  {
     .container {
         columns: 1;
     }
+}
+
+
+/*  * HERO ABOUT V*/
+#hero #flex-properties {
+  flex-direction: row-reverse;
+
+  @media (max-width: 480px)
+ {
+    flex-direction: column;
+  }
+}
+
+ 
+
+
+
+
+
+
+.sq-styles {
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-styles {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 2px 4px 2px 4px;
+}
+
+
+
+#web-development #dynamic-btn {
+  background: #f0ead2;
 }

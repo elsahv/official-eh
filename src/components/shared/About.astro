@@ -1,0 +1,58 @@
+---
+import ButtonProps from "../shared/ButtonProps.astro";
+
+export interface Props {
+  attentionParagraph: string;
+  interestParagraph: string;
+  desireParagraph: string;
+  actionParagraph: string;
+}
+
+const {
+  attentionParagraph,
+  interestParagraph,
+  desireParagraph,
+  actionParagraph,
+} = Astro.props as Props;
+// import ButtonProps from "../shared/ButtonProps.astro";
+---
+
+<div id="about-wrapper" class="bg- lg:m-3 py- bg- flex justify-center">
+  <div
+    id="flex-properties"
+    class="w-[1300px] flex 2xl:flex-row flex-col gap-5 p-5 2xl:mt-[50px]"
+  >
+    <div id="img-wrapper" class="bg- lg:pr-5 lg:mr-5">
+      <img
+        src="https://images.pexels.com/photos/6962993/pexels-photo-6962993.jpeg"
+        alt=""
+        class="my-2 sq-styles"
+      />
+    </div>
+
+    <div id="about-wrapper" class="">
+      <div
+        id="about-container"
+        class="flex flex-col space-y-7 bg-munsell text-aliceBlue sq-styles lg:text-xl text-lg p-5 mt-5 mb-5"
+      >
+        <!-- -1) attention -->
+        <!-- -2) interest -->
+        <!-- -3) desire -->
+        <!-- -4) action -->
+        <p id="" class="bg-">
+          {attentionParagraph}
+        </p>
+        <p id="" class="bg-">
+          {interestParagraph}
+        </p>
+        <p>
+          {desireParagraph}
+        </p>
+        <p>
+          {actionParagraph}
+        </p>
+        <ButtonProps btn1Link="/#about-cta" btn1="about" />
+      </div>
+    </div>
+  </div>
+</div>

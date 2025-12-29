@@ -1,74 +1,80 @@
 ---
 import Hero from "../components/sections/Hero.astro";
 import Contact from "../components/sections/Contact.astro";
-// import SiteCard from "../components/SiteCard.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import Work from "../components/sections/Work.astro";
-import About from "../components/sections/About.astro";
+import Card from "../components/shared/Card.astro";
+import WebDevelopment from "../components/sections/WebDevelopment.astro";
+import Gallery from "../components/Gallery.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import Packages from "../components/Packages.astro";
-
-// const allFeaturedSites = await Astro.glob("./websites/*.md");
+const allSites = await Astro.glob("./posts/*.md");
 ---
 
 <MainLayout>
   <div id="right-side-container" class="">
     <Hero />
 
-    <!-- TODO: PROBLEM SOLVING V -->
-
-    <section id="about">
-      <CenterPageBanner BannerTitle="About" />
-      <About />
-    </section>
-
-    <!--  TODO:  TRUST THE (4 STEP) PROCESS V -->
-    <section id="work">
-      <CenterPageBanner BannerTitle="Work" />
-      <Work />
-    </section>
-
-    <!-- TODO:  SOCIAL PROOF V -->
-
-    <section id="packages">
-      <CenterPageBanner BannerTitle="Packages" />
-      <Packages />
-    </section>
-
-    <!-- 
-      <div id="portfolio">
-        <CenterPageBanner BannerTitle="Portfolio" />
-        <div id="portfolio-wrapper" class="opacity-80 pt-1 px-5 bg-">
-          <div
-            id="portfolio-grid"
-            class="flex flex-col gap-y-24 mt-5 pt-5 px-5"
-          >
-            {
-              allFeaturedSites.map((work) => (
-                <SiteCard
-                  title={work.frontmatter.title}
-                  image={work.frontmatter.image.url}
-                  alt={work.frontmatter.image.alt}
-                  url={work.url}
-                  testItem1={work.frontmatter.testItem1}
-                  websiteNumber={work.frontmatter.websiteNumber}
-                />
-              ))
-            }
-          </div>
-        </div>
-      </div> -->
-
-    <!-- TODO: SOCIAL PROOF ^ -->
-
-    <!-- TODO:  a.WHATS INCLUDED, b. pricing V -->
-    <!-- a.WHATS INCLUDED, b. pricing ^-->
-
-    <!--  TODO:  a.ABOUT ME (JOURNEY), b. final cta V -->
-    <div id="contact">
-      <CenterPageBanner BannerTitle="Contact" />
-      <Contact />
+    <!-- *WEB DEV TO ABOUT v-->
+    <div id="about" class="bg-">
+      <WebDevelopment />
     </div>
-    <!-- ABOUT ME ^ -->
+    <!-- *WEB DEV TO ABOUT ^-->
+
+    <!-- *PORTFOLIO -->
+    <div id="portfolio">
+      <CenterPageBanner BannerTitle="Portfolio" />
+      <Gallery />
+    </div>
+    <!--* WRITING SECTION v-->
+    <!-- <Writing /> -->
+    <div
+      id="notes"
+      class="flex justify-center bg-teal md:mt-[150px] pb-5 pl-2 text-"
+    >
+      <div id="blog-container" class="">
+        <CenterPageBanner BannerTitle="Notes" />
+        <div
+          id="grid"
+          class="bg- pb-5 my-5 pt-5 pl-[45px] pr-[55px] grid md:grid-cols-2 grid-cols-1 gap-12"
+        >
+          {
+            allSites.map((site) => (
+              <Card
+                title={site.frontmatter.title}
+                image={site.frontmatter.image?.url}
+                alt={site.frontmatter.title}
+                pubDate={site.frontmatter.pubDate}
+                testItem1={site.frontmatter.testItem1}
+                category1={site.frontmatter.category1}
+                category2={site.frontmatter.category2}
+                url={site.url}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!--* PROJECTS SECTION v-->
+
+  <section id="projects" class="px-5 mt-5">
+    <!-- <Projects />
+    <div class="flex 2xl:flex-row flex-col p-5">
+      {
+        allFeaturedSites.map((work) => (
+          <SiteCard
+            title={work.frontmatter.title}
+            image={work.frontmatter.image.url}
+            alt={work.frontmatter.image.alt}
+            url={work.url}
+            testItem1={work.frontmatter.testItem1}
+            websiteNumber={work.frontmatter.websiteNumber}
+          />
+        ))
+      }
+    </div> -->
+  </section>
+
+  <!--* CONTACT SECTION v-->
+  <Contact />
 </MainLayout>

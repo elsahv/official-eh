@@ -12,33 +12,27 @@ const {
 } = frontmatter;
 ---
 
-<div id="sq" class="ml-5 mr-[50px] p-5">
+<div id="sq" class="opacity-70 hover:opacity-100 px-5 mt-5 pt-3">
   <a href={url}>
-    <div class="">
-      <div>{websiteNumber}</div>
+    <div class="pb-1 flex text-3xl">
+      <div>{websiteNumber}.</div>
+      <h2 class="ml-3">{title}</h2>
     </div>
-    <div class="font- opacity-80 text-onyx pb-5">
-      <h2 class="text-4xl">{title}</h2>
-      <!-- <p>12/12/25</p> -->
-    </div>
-
     <img
       src={image}
-      class="drop-shadow-xl rounded border border-gray-300"
+      class="drop-shadow-xl rounded border border-munsell"
       alt={alt}
     />
+
     <div
       id="post-excerpt"
-      class="bg- flex text-onyx bg-papaya mb-5 pt- pb-3 drop-shadow-md"
+      class="bg- text-onyx bg-papaya mb-5 pb-3 drop-shadow-md"
     >
-      <div class="mt-5 px-5">
-        <p class="pt- pr-5 opacity-80 text-lg">{testItem1}</p>
-        <div id="btn-wrapper" class="mt-2">
-          <button
-            class="bg-munsell text-aliceBlue px-2 py-1 rounded opacity-70 hover:opacity-100"
-            >read more</button
-          >
-        </div>
+      <div class="mt-2 flex">
+        <p class="pl-5 pr-1 opacity-80 text-lg">{testItem1}</p>
+        <button class="text-munsell underline opacity-70 hover:opacity-100"
+          >read more...</button
+        >
       </div>
     </div>
   </a>

@@ -7,17 +7,19 @@ export interface Props {
 const { btn1, btn1Link } = Astro.props as Props;
 ---
 
-<div id="btn-container" class="bg-test flex py-5 bg-">
-  <button
-    id="dynamic-btn"
-    class="py-1 px-2 mr-4 rounded bg-munsell text-aquamarine border border-parchment"
-  >
-    <a href={btn1Link}>{btn1}</a>
-  </button>
-  <button
-    id="contact-btn"
-    class="py-1 px-2 bg-test2 text-carribean border border-black rounded"
-  >
-    <a href="/#contact">contact</a>
-  </button>
+<div class="pr-5 bg-">
+  <div id="btn-container" class="bg- flex flex-row items-center space-x-4">
+    <button
+      id="dynamic-btn"
+      class="btn-styles lg:py-1 lg:px-2 rounded bg-aquamarine text-munsell border border-parchment"
+    >
+      <a class="bg-" href={btn1Link}>{btn1}</a>
+    </button>
+    <button
+      id="contact-btn"
+      class="lg:py-1 lg:px-2 bg-test2 text-carribean btn-styles"
+    >
+      <a href="/#contact">contact</a>
+    </button>
+  </div>
 </div>

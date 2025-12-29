@@ -2,7 +2,7 @@
 id: 4
 layout: ../../layouts/MarkdownPostLayout.astro
 # title: "My First Blog Post"
-title: "An artist community"
+title: "writing-to-better-health"
 pubDate: 2022-07-01
 testItem1: " A web design subscription service for small business owners and creatives- focuses on landing pages and user stories."
 author: "Astro Learner"

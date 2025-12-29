@@ -1,7 +1,6 @@
 ---
 import temp1 from "../images/moon.png";
 import temp2 from "../images/moon.png";
-import temp3 from "../images/moon.png";
 import { Image } from "astro:assets";
 
 const templates = [
@@ -14,6 +13,13 @@ const templates = [
   },
   {
     id: 2,
+    title: "B. The Running Quail",
+    siteImg: temp2,
+    p: "A three page template with all important things covered. Lorem iaepe assumenda accusamus cupiditate, eum doloribus atque explicabo adipisci consequatur quos quibusdam hic? Velit dolore ullam aliquam suscipit.",
+    url: "https://lc-fish-expo-demo.vercel.app/",
+  },
+  {
+    id: 3,
     title: "B. The Running Quail",
     siteImg: temp2,
     p: "A three page template with all important things covered. Lorem iaepe assumenda accusamus cupiditate, eum doloribus atque explicabo adipisci consequatur quos quibusdam hic? Velit dolore ullam aliquam suscipit.",
@@ -39,7 +45,7 @@ const templates = [
       <div id="grid-container" class="2xl:px-5 px-1">
         <div
           id="grid"
-          class="bg-test2 grid md:grid-cols-2 grid-cols-1 2xl:gap-16 gap-8"
+          class="bg- grid md:grid-cols-3 grid-cols-1 2xl:gap-16 gap-8"
         >
           {
             templates.map((template) => (

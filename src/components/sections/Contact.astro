@@ -1,31 +1,36 @@
 ---
 import ContactForm from "../ContactForm.astro";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
 ---
 
-<div id="contact-wrapper" class="h-screen md:mt-[100px] mt-1 pt-5 px-5">
-  <div id="contact-container" class="mt-5 md:p-5 p-0 bg-">
-    <div id="contact-form-container" class="lg:px-5 px-0 py-5 mt-5">
-      <div id="grid" class="grid 2xl:grid-cols-2 grid-cols-1 gap-5">
-        <div id="sq1" class="md:p-2 p-5 2xl:pl-5 pl-1 pt-5">
-          <p class="pt-1 text-xl font-semibold">
-            You can contact me by emailing:<span class="">
-              <a
-                class="font-semibold underline text-munsell"
-                href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a
-              >
-            </span>
-          </p>
-          <p class="pl-1 pt-1 opacity-85">
-            I am always looking for opportunities to further my skills... and
-            work with other like minded people in tech. If you would like to
-            contact me, you can also find me at <i>sm </i>and <i>sm </i>
-          </p>
-        </div>
-        <div id="sq2">
-          <!-- <Image src={Pic1} alt="" class="border border-rosyBrown" /> -->
-          <ContactForm />
+<!--   a.ABOUT ME (JOURNEY), b. final cta V -->
+<section id="contact">
+  <CenterPageBanner BannerTitle="Contact" />
+  <div id="contact-wrapper" class="h-screen md:mt-[100px] mt-1 pt-5 px-5">
+    <div id="contact-container" class="mt-5 md:p-5 p-0 bg-">
+      <div id="contact-form-container" class="lg:px-5 px-0 py-5 mt-5">
+        <div id="grid" class="grid 2xl:grid-cols-2 grid-cols-1 gap-5">
+          <div id="sq1" class="md:p-2 p-5 2xl:pl-5 pl-1 pt-5">
+            <p class="pt-1 text-xl font-semibold">
+              You can contact me by emailing:<span class="">
+                <a
+                  class="font-semibold underline text-munsell"
+                  href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a
+                >
+              </span>
+            </p>
+            <p class="pl-1 pt-1 opacity-85">
+              I am always looking for opportunities to further my skills... and
+              work with other like minded people in tech. If you would like to
+              contact me, you can also find me at <i>sm </i>and <i>sm </i>
+            </p>
+          </div>
+          <div id="sq2">
+            <!-- <Image src={Pic1} alt="" class="border border-rosyBrown" /> -->
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
