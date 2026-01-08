@@ -1,0 +1,24 @@
+---
+import Gallery from "../Gallery.astro";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
+import WebsitesGrid from "../shared/WebsitesGrid.astro";
+import LC from "../About/LC.astro";
+import RQ from "../About/RQ.astro";
+import WTBH from "../About/WTBH.astro";
+import Jungle from "../About/Jungle.astro";
+---
+
+<div id="portfolio">
+  <CenterPageBanner BannerTitle="Portfolio" />
+  <WebsitesGrid />
+  <div id="padding-left" class="mr-5 2xl:px-[150px] p-1 bg-">
+    <LC />
+    <RQ />
+    <WTBH />
+    <Jungle />
+  </div>
+</div>
+
+<!-- TODO: TURN GALLERY INTO SKILLS?  -->
+<!--? GALLERY OF ALL MY SKILLS  V-->
+<Gallery />

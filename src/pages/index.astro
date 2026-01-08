@@ -3,29 +3,19 @@ import Hero from "../components/sections/Hero.astro";
 import Contact from "../components/sections/Contact.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Card from "../components/shared/Card.astro";
-import WebDevelopment from "../components/sections/WebDevelopment.astro";
-import Gallery from "../components/Gallery.astro";
+import Portfolio from "../components/sections/Portfolio.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import About from "../components/About/index.astro";
 const allSites = await Astro.glob("./posts/*.md");
 ---
 
 <MainLayout>
   <div id="right-side-container" class="">
     <Hero />
+    <About />
+    <Portfolio />
 
-    <!-- *WEB DEV TO ABOUT v-->
-    <div id="about" class="bg-">
-      <WebDevelopment />
-    </div>
-    <!-- *WEB DEV TO ABOUT ^-->
-
-    <!-- *PORTFOLIO -->
-    <div id="portfolio">
-      <CenterPageBanner BannerTitle="Portfolio" />
-      <Gallery />
-    </div>
-    <!--* WRITING SECTION v-->
-    <!-- <Writing /> -->
+    <!-- NOTES SECTION v-->
     <div
       id="notes"
       class="flex justify-center bg-teal md:mt-[150px] pb-5 pl-2 text-"

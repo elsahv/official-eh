@@ -7,10 +7,18 @@ html {
 
 * {
   box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+  overflow-x:hidden
 }
 
 p {
   /* font-size: 16px; */
+}
+
+
+section {
+  margin: 70px 0;
 }
 
 ._shadowText1 {
@@ -69,9 +77,9 @@ p {
 
 /*  * HERO ABOUT V*/
 #hero #flex-properties {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 
-  @media (max-width: 480px)
+  @media (max-width: 1024px)
  {
     flex-direction: column;
   }
@@ -85,18 +93,134 @@ p {
 
 
 .sq-styles {
-  border-radius: 2px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #15616D;
+    border-radius: 5px;
+    margin: 15px 5px 15px 5px;
 }
 
 .btn-styles {
   border-radius: 5px;
-  border: 1px solid black;
+  border: 2px solid 15616D;
   padding: 2px 4px 2px 4px;
+  opacity: 0.6;
 }
 
 
 
 #web-development #dynamic-btn {
   background: #f0ead2;
+}
+
+
+
+
+/* ABOUT PROJECT SECTION STYLES */
+
+#about-all-projects #about-content {
+  margin-top: 230px;
+}
+
+
+
+
+
+
+#about-lc #flex-properties {
+  flex-direction: row-reverse;
+}
+
+
+
+@media (max-width: 1024px)
+ {
+#about-lc #flex-properties {
+  flex-direction: column-reverse;
+}
+ }
+
+
+#about-lc #img-wrapper {
+  transform: scaleX(-1);
+
+}
+
+#about-lc  #other{
+  background: maroon;
+   transform: scaleX(-1);
+
+}
+
+
+
+
+#about-lc  #other{
+  background: maroon;
+   transform: scaleX(-1);
+
+}
+
+
+
+
+
+#about-wtbh #flex-properties{
+     flex-direction: row-reverse;
+     /* background: green; */
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+#about-wtbh #flex-properties{
+   flex-direction: column-reverse;
+}
+ }
+
+
+
+#hero #about-content {
+  background: #0792a5;
+}
+
+
+
+#about-lc #about-content {
+  /* background: #FF7F50 */
+}
+
+#about-all-projects #other {
+  margin: 5px;
+    padding: 5px
+}
+
+#about-all-projects #screenshot {
+  border: #15616D solid 1px;
+  margin-bottom: 50px;
+  
+}
+
+
+
+#about-rq  #about-content  {
+  /* background: gold; */
+  /* color: black; */
+
+}
+
+
+
+
+ 
+
+/* JUNGLE --V */
+#about-jungle  #about-content   {
+  /* background: green; */
+}
+
+#about-jungle  #screenshot  {
+  /* border: #15616D solid 1px;
+  border-radius: 15px; */
 }

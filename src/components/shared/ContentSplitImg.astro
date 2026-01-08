@@ -1,0 +1,72 @@
+---
+import ButtonProps from "../shared/ButtonProps.astro";
+
+export interface Props {
+  attentionParagraph: string;
+  interestParagraph: string;
+  desireParagraph: string;
+  actionParagraph: string;
+  websiteUrl?: string;
+  img: string;
+  img2: string;
+}
+
+const {
+  attentionParagraph,
+  interestParagraph,
+  desireParagraph,
+  actionParagraph,
+  websiteUrl,
+  img,
+  img2,
+} = Astro.props as Props;
+// import ButtonProps from "../shared/ButtonProps.astro";
+---
+
+<div id="about-wrapper" class="2xl:m-3 xl:mr-5 xl:pr-5 flex justify-center">
+  <div
+    id="flex-properties"
+    class="bg- lg:w-[1300px] bg- flex 2xl:flex-row flex-col gap-5 2xl:p-5 lg:mt-[50px]"
+  >
+    <div id="img-wrapper" class="bg-">
+      <div id="imgs-container" class="bg-">
+        <a href={websiteUrl}>
+          <img id="screenshot" src={img} alt="" class="" />
+          <img id="other" src={img2} alt="" class="sq-styles" />
+        </a>
+      </div>
+    </div>
+
+    <div id="about-wrapper" class="bg-">
+      <div
+        id="about-content"
+        class="flex flex-col space-y-7 text- lg:text-xl text-lg p-5 mt-5 mb-5"
+      >
+        <!-- -1) attention -->
+        <!-- -2) interest -->
+        <!-- -3) desire -->
+        <!-- -4) action -->
+        <p
+          id="attentionParagraph"
+          class="bg-munsell text-aliceBlue font-bold text-2xl py-1 px-2 sq-styles"
+        >
+          {attentionParagraph}
+        </p>
+
+        <div id="padding-left" class="pl-2 space-y-5 text-md">
+          <p id="" class="bg-">
+            {interestParagraph}
+          </p>
+          <p class="bg-">
+            {desireParagraph}
+          </p>
+          <p class="bg-">
+            {actionParagraph}
+          </p>
+        </div>
+
+        <ButtonProps btn1Link="/#about-cta" btn1="about" />
+      </div>
+    </div>
+  </div>
+</div>
