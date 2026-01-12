@@ -23,24 +23,24 @@ const {
 // import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
-<div id="about-wrapper" class="2xl:m-3 xl:mr-5 xl:pr-5 flex justify-center">
+<div id="wrapper" class="2xl:my-3 flex justify-center bg-">
   <div
-    id="flex-properties"
-    class="bg- lg:w-[1300px] bg- flex 2xl:flex-row flex-col gap-5 2xl:p-5 lg:mt-[50px]"
+    id="flex"
+    class="bg- lg:w-[1300px] bg- flex 2xl:flex-row flex-cols gap-5 2xl:p-5 lg:mt-[50px]"
   >
-    <div id="img-wrapper" class="bg-">
+    <div id="sq1" class="bg-">
       <div id="imgs-container" class="bg-">
         <a href={websiteUrl}>
-          <img id="screenshot" src={img} alt="" class="" />
-          <img id="other" src={img2} alt="" class="sq-styles" />
+          <img id="img1" src={img} alt="" class="bg-" />
+          <img id="img2" src={img2} alt="" class="sq-styles" />
         </a>
       </div>
     </div>
 
-    <div id="about-wrapper" class="bg-">
+    <div id="sq2" class="bg- px-5">
       <div
-        id="about-content"
-        class="flex flex-col space-y-7 text- lg:text-xl text-lg p-5 mt-5 mb-5"
+        id="content"
+        class="bg- flex flex-col lg:text-xl text-lg p-1 mt-5 mb-5"
       >
         <!-- -1) attention -->
         <!-- -2) interest -->
@@ -48,12 +48,12 @@ const {
         <!-- -4) action -->
         <p
           id="attentionParagraph"
-          class="bg-munsell text-aliceBlue font-bold text-2xl py-1 px-2 sq-styles"
+          class="bg- text- text- text-4xl font-bold py-1 sq- text-"
         >
           {attentionParagraph}
         </p>
 
-        <div id="padding-left" class="pl-2 space-y-5 text-md">
+        <div id="padding-left" class="pl-1 space-y-5">
           <p id="" class="bg-">
             {interestParagraph}
           </p>

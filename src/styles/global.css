@@ -7,30 +7,46 @@ html {
 
 * {
   box-sizing: border-box;
-    margin: 0;
+  margin: 0;
   padding: 0;
-  overflow-x:hidden
+  /* overflow-x:hidden */
 }
 
 p {
-  /* font-size: 16px; */
+  font-size: 17px
 }
-
+ 
 
 section {
-  margin: 70px 0;
+  /* margin: 120px 0; */
 }
 
-._shadowText1 {
-  text-shadow: 2px 2px 2px black;
+
+
+
+.sq-styles {
+  border: 1px solid #15616D;
+    border-radius: 5px;
+    padding: 4px 5px 4px 5px;
 }
 
-._shadowText2 {
-  text-shadow: 2px 2px 1px teal;
+.btn-styles {
+ padding: 0px 3px 0px 3px;
+ font-size: 12px;
+ margin-top: 15px;
+ /* margin-left: 5px; */
+ border-radius: 5px;
+ border: 1px solid #313638;
 }
-  
+ 
+ 
 
-/* *CONTAINER BOX */
+
+
+
+
+
+/* *GALLERY STYLES */
 .container {
     width: 1400px;
     margin: 20px auto;
@@ -75,57 +91,42 @@ section {
 }
 
 
-/*  * HERO ABOUT V*/
-#hero #flex-properties {
-  /* flex-direction: row-reverse; */
 
+
+/*   HERO SECTION V*/
+#hero #flex {
+  
   @media (max-width: 1024px)
  {
     flex-direction: column;
   }
 }
 
+
+#hero #img1 {
+  width: 1200px;
+}
+
+
+
+/* ABOUT SECTION v*/
+  #about #flex {
+  flex-direction: row-reverse;
+  }
+
+ #about #img1 {
+    transform: scaleX(-1);
+ }
+
+
  
 
+ /* * PORTFOLIO SECTION  --V*/  
+  #portfolio-LC #img2{
+     transform: scaleX(-1);
+  }
 
-
-
-
-
-.sq-styles {
-  border: 1px solid #15616D;
-    border-radius: 5px;
-    margin: 15px 5px 15px 5px;
-}
-
-.btn-styles {
-  border-radius: 5px;
-  border: 2px solid 15616D;
-  padding: 2px 4px 2px 4px;
-  opacity: 0.6;
-}
-
-
-
-#web-development #dynamic-btn {
-  background: #f0ead2;
-}
-
-
-
-
-/* ABOUT PROJECT SECTION STYLES */
-
-#about-all-projects #about-content {
-  margin-top: 230px;
-}
-
-
-
-
-
-
-#about-lc #flex-properties {
+#portfolio-LC #flex {
   flex-direction: row-reverse;
 }
 
@@ -133,18 +134,22 @@ section {
 
 @media (max-width: 1024px)
  {
-#about-lc #flex-properties {
+#portfolio-LC #flex {
   flex-direction: column-reverse;
 }
  }
 
 
-#about-lc #img-wrapper {
+#portfolio-LC #sq1 {
   transform: scaleX(-1);
-
 }
 
-#about-lc  #other{
+ 
+
+
+
+
+#portfolio-LC  #other{
   background: maroon;
    transform: scaleX(-1);
 
@@ -152,18 +157,14 @@ section {
 
 
 
-
-#about-lc  #other{
-  background: maroon;
-   transform: scaleX(-1);
-
-}
+ /* * PORTFOLIO SECTION  --^*/
 
 
 
 
 
-#about-wtbh #flex-properties{
+
+#wtbh #flex{
      flex-direction: row-reverse;
      /* background: green; */
 }
@@ -174,29 +175,20 @@ section {
 
 
 @media (max-width: 1024px) {
-#about-wtbh #flex-properties{
+#wtbh #flex{
    flex-direction: column-reverse;
 }
  }
 
 
 
-#hero #about-content {
-  background: #0792a5;
-}
-
-
-
-#about-lc #about-content {
-  /* background: #FF7F50 */
-}
-
-#about-all-projects #other {
+ 
+#about #other {
   margin: 5px;
     padding: 5px
 }
 
-#about-all-projects #screenshot {
+#about #screenshot {
   border: #15616D solid 1px;
   margin-bottom: 50px;
   

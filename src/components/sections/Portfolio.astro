@@ -2,20 +2,40 @@
 import Gallery from "../Gallery.astro";
 import CenterPageBanner from "../shared/CenterPageBanner.astro";
 import WebsitesGrid from "../shared/WebsitesGrid.astro";
-import LC from "../About/LC.astro";
-import RQ from "../About/RQ.astro";
-import WTBH from "../About/WTBH.astro";
-import Jungle from "../About/Jungle.astro";
+import LC from "../sections/LC.astro";
+import RQ from "../sections/RQ.astro";
+import WTBH from "../sections/WTBH.astro";
+import Jungle from "../sections/Jungle.astro";
 ---
 
 <div id="portfolio">
   <CenterPageBanner BannerTitle="Portfolio" />
+  <div id="container" class="pl-5 pt-5 ml-5">
+    <h2 class="text-3xl">What I do</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+      consequuntur laborum error id recusandae sapiente deleniti dignissimos hic
+      cum at dolorum vitae minima, nihil laboriosam, ad quia quae illo numquam.
+    </p>
+  </div>
   <WebsitesGrid />
-  <div id="padding-left" class="mr-5 2xl:px-[150px] p-1 bg-">
-    <LC />
-    <RQ />
-    <WTBH />
-    <Jungle />
+
+  <div id="wrapper" class="bg-">
+    <div id="container" class="p-5 ml-5 text-onyx">
+      <h2 class="text-3xl">Projects</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+        consequuntur laborum error id recusandae sapiente deleniti dignissimos
+        hic cum at dolorum vitae minima, nihil laboriosam, ad quia quae illo
+        numquam.
+      </p>
+    </div>
+    <div id="padding" class="mr-5 2xl:px-[150px] p-1 bg-">
+      <LC />
+      <RQ />
+      <WTBH />
+      <Jungle />
+    </div>
   </div>
 </div>
 
