@@ -1,31 +1,30 @@
 ---
 const items = [
   {
-    icon: "about",
-    link: "/#about",
+    icon: "https://dl.dropboxusercontent.com/scl/fi/sazqvcewj4102t3pryhgs/github.png?rlkey=393g3j44d83mk55k2kya5ct0e&st=1a1ftfsv&dl=0",
+    link: "/github",
   },
   {
-    icon: "portfolio",
-    link: "/#portfolio ",
+    icon: "https://dl.dropboxusercontent.com/scl/fi/ecqo4nns2dlsxe1hvfiz7/linkedIn.png?rlkey=x95p8d0plnukih5fvelej4fv7&st=5cm9z36w&dl=0",
+    link: "/#linkedin ",
   },
+
+  // {
+  //   icon: "notes",
+  //   link: "/#notes ",
+  // },
   {
-    icon: "notes",
-    link: "/#notes ",
-  },
-  {
-    icon: "contact",
-    link: "/#contact ",
+    icon: "https://dl.dropboxusercontent.com/scl/fi/azjiy3b7xp4q8u13o7yyg/instagram.png?rlkey=cxial2ze2jk0q9qjw942sibuc&st=pwo8jfmp&dl=0",
+    link: "/#instagram ",
   },
 ];
 ---
 
-<div class="pl-2 opacity-90 text-onyx flex justify-left">
-  <div class="border-t border-b border-black flex flex-col py-2">
+<div class="opacity-90 bg-">
+  <div class="flex items-center space-x-3 pl-4 opacity-70 bg-">
     {
       items.map((item) => (
-        <div class="flex items-center space-x-2 text-3xl ml-1">
-          <a href={item.link}>{item.icon}</a>
-        </div>
+        <img src={item.icon} alt="" class="bg-test w-[35px] h-[35px]" />
       ))
     }
   </div>

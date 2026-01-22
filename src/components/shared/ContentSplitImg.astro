@@ -1,6 +1,4 @@
 ---
-import ButtonProps from "../shared/ButtonProps.astro";
-
 export interface Props {
   attentionParagraph: string;
   interestParagraph: string;
@@ -23,7 +21,7 @@ const {
 // import ButtonProps from "../shared/ButtonProps.astro";
 ---
 
-<div id="wrapper" class="2xl:my-3 flex justify-center bg-">
+<div id="wrapper" class="bg- 2xl:my-3 flex justify-center bg-">
   <div
     id="flex"
     class="bg- lg:w-[1300px] bg- flex 2xl:flex-row flex-cols gap-5 2xl:p-5 lg:mt-[50px]"
@@ -31,13 +29,12 @@ const {
     <div id="sq1" class="bg-">
       <div id="imgs-container" class="bg-">
         <a href={websiteUrl}>
-          <img id="img1" src={img} alt="" class="bg-" />
+          <img id="img1" src={img} alt="" class="" />
           <img id="img2" src={img2} alt="" class="sq-styles" />
         </a>
       </div>
     </div>
-
-    <div id="sq2" class="bg- px-5">
+    <div id="sq2" class="bg-pt-5 mt-5 px-5">
       <div
         id="content"
         class="bg- flex flex-col lg:text-xl text-lg p-1 mt-5 mb-5"
@@ -64,8 +61,6 @@ const {
             {actionParagraph}
           </p>
         </div>
-
-        <ButtonProps btn1Link="/#about-cta" btn1="about" />
       </div>
     </div>
   </div>

@@ -1,15 +1,21 @@
 ---
+// import Gallery from "../Gallery.astro";
+
+import ButtonProps from "../shared/ButtonProps.astro";
 import ContentSplitImg from "../shared/ContentSplitImg.astro";
+import WebsitesGrid from "../shared/WebsitesGrid.astro";
 ---
 
 <!-- 1) HEADLINE (CLEAR VALUE) --><!-- 2) SUB HEADLINE (WHO ITS FOR AND HOW) --><!-- 3) PRIMARY CTA -->
-<section id="hero" class="bg-">
+<section id="hero" class="-">
+  <!-- <WebsitesGrid /> -->
   <ContentSplitImg
-    attentionParagraph="🖥️  Cozy, high-converting websites for small businesses"
+    attentionParagraph="🖥️ Web Design & FullStack Development"
     interestParagraph=" I design and build fast, modern websites that help small businesses look more professional,"
     desireParagraph=" all without the tech headache."
     actionParagraph="I've done all the over thinking with building sites... so you don't have to! "
-    img="https://dl.dropboxusercontent.com/scl/fi/wgfi7eat7rydozfsyz0sf/20210416_091132_HDR.jpg?rlkey=zza6btn86hdnxep9732n99fid&st=9opapzud&dl=0 "
-    img2=""
+    img=""
+    img2="https://dl.dropboxusercontent.com/scl/fi/e7c8npuns63srej6y2wju/ehLogo2.png?rlkey=lw92l2jhk1duxqw5y5spn99om&st=3gd86pi9&dl=0 "
   />
+  <ButtonProps btn1Link="/#about" btn1="Find out more" />
 </section>

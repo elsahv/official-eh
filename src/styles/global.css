@@ -94,6 +94,9 @@ section {
 
 
 /*   HERO SECTION V*/
+ #hero {
+ }
+
 #hero #flex {
   
   @media (max-width: 1024px)
@@ -102,11 +105,7 @@ section {
   }
 }
 
-
-#hero #img1 {
-  width: 1200px;
-}
-
+ 
 
 
 /* ABOUT SECTION v*/
