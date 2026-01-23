@@ -111,7 +111,7 @@ section {
 /* ABOUT SECTION v*/
 
  #about #flex {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse;  
   /* background: blue; */
  }
 
@@ -209,14 +209,37 @@ section {
 
 
 
-#about-rq  #about-content  {
-  /* background: gold; */
-  /* color: black; */
+#about-rq  #flex  {
+  /* background: purple; */
+  flex-direction: row;
+  
 
 }
 
 
+#about-rq  #flex  {
+  @media (max-width: 1024px)
+  {
+    flex-direction: column;
+  }
+}
 
+
+#about-rq #dynamic-btn {
+    color: black;
+  background: #f1f5f9;
+  border: none;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+
+#about-rq #contact-btn {
+    background-color:  #313638;
+   font-size: 34px;
+     background: #f1f5f9;
+       border: none;
+}
 
  
 
@@ -249,20 +272,3 @@ section {
   border: none;
 } 
 
-
-
-#about-rq #dynamic-btn {
-    color: black;
-  background: #f1f5f9;
-  border: none;
-  font-weight: 800;
-  text-decoration: underline;
-}
-
-
-#about-rq #contact-btn {
-    background-color:  #313638;
-   font-size: 34px;
-     background: #f1f5f9;
-       border: none;
-}
