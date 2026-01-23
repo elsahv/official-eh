@@ -2,11 +2,11 @@
 const items = [
   {
     icon: "https://dl.dropboxusercontent.com/scl/fi/sazqvcewj4102t3pryhgs/github.png?rlkey=393g3j44d83mk55k2kya5ct0e&st=1a1ftfsv&dl=0",
-    link: "/github",
+    link: "https://github.com/elsahv?tab=repositories",
   },
   {
     icon: "https://dl.dropboxusercontent.com/scl/fi/ecqo4nns2dlsxe1hvfiz7/linkedIn.png?rlkey=x95p8d0plnukih5fvelej4fv7&st=5cm9z36w&dl=0",
-    link: "/#linkedin ",
+    link: "https://www.linkedin.com/in/elsa-hovey",
   },
 
   // {
@@ -15,7 +15,7 @@ const items = [
   // },
   {
     icon: "https://dl.dropboxusercontent.com/scl/fi/azjiy3b7xp4q8u13o7yyg/instagram.png?rlkey=cxial2ze2jk0q9qjw942sibuc&st=pwo8jfmp&dl=0",
-    link: "/#instagram ",
+    link: "https://www.instagram.com/elsahoveydevdesign/ ",
   },
 ];
 ---
@@ -24,7 +24,9 @@ const items = [
   <div class="flex items-center space-x-3 pl-4 opacity-70 bg-">
     {
       items.map((item) => (
-        <img src={item.icon} alt="" class="bg-test w-[35px] h-[35px]" />
+        <a href={item.link} target="_blank" rel="noopener noreferrer">
+          <img src={item.icon} alt="" class="bg-test w-[35px] h-[35px]" />
+        </a>
       ))
     }
   </div>

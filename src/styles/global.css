@@ -31,7 +31,7 @@ section {
 }
 
 .btn-styles {
- padding: 0px 3px 0px 3px;
+ padding: 0px 5px 0px 5px;
  font-size: 15px;
  margin-top: 15px;
  /* margin-left: 5px; */
@@ -109,9 +109,23 @@ section {
 
 
 /* ABOUT SECTION v*/
-  #about #flex {
+
+ #about #flex {
   flex-direction: row-reverse;
+  /* background: blue; */
+ }
+
+@media (max-width: 1024px) {
+
+  #about #flex {
+  flex-direction: column;
   }
+}
+
+
+
+
+
 
  #about #img1 {
     transform: scaleX(-1);
@@ -121,11 +135,11 @@ section {
  
 
  /* * PORTFOLIO SECTION  --V*/  
-  #portfolio-LC #img2{
+  #about-LC #img2{
      transform: scaleX(-1);
   }
 
-#portfolio-LC #flex {
+#about-LC #flex {
   flex-direction: row-reverse;
 }
 
@@ -133,13 +147,13 @@ section {
 
 @media (max-width: 1024px)
  {
-#portfolio-LC #flex {
+#about-LC #flex {
   flex-direction: column-reverse;
 }
  }
 
 
-#portfolio-LC #sq1 {
+#about-LC #sq1 {
   transform: scaleX(-1);
 }
 
@@ -148,7 +162,7 @@ section {
 
 
 
-#portfolio-LC  #other{
+#about-LC  #other{
   background: maroon;
    transform: scaleX(-1);
 
@@ -214,4 +228,41 @@ section {
 #about-jungle  #screenshot  {
   /* border: #15616D solid 1px;
   border-radius: 15px; */
+}
+ 
+
+
+#about-LC #dynamic-btn {
+  color: black;
+  background: #f1f5f9;
+  border: none;
+  font-weight: 800;
+  text-decoration: underline;
+} 
+
+
+
+#about-LC #contact-btn {
+   font-size: 34px;
+     color: black;
+  background: #f1f5f9;
+  border: none;
+} 
+
+
+
+#about-rq #dynamic-btn {
+    color: black;
+  background: #f1f5f9;
+  border: none;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+
+#about-rq #contact-btn {
+    background-color:  #313638;
+   font-size: 34px;
+     background: #f1f5f9;
+       border: none;
 }

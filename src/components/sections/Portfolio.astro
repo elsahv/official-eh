@@ -4,14 +4,14 @@ import CenterPageBanner from "../shared/CenterPageBanner.astro";
 // import WebsitesGrid from "../shared/WebsitesGrid.astro";
 import LC from "../sections/LC.astro";
 import RQ from "../sections/RQ.astro";
-import WTBH from "../sections/WTBH.astro";
-import Jungle from "../sections/Jungle.astro";
+// import WTBH from "../sections/WTBH.astro";
+// import Jungle from "../sections/Jungle.astro";
 ---
 
-<div id="portfolio">
+<div id="portfolio" class="">
   <CenterPageBanner BannerTitle="Portfolio" />
   <!-- <WebsitesGrid /> -->
-  <div id="container" class="pl-5 pt-5 ml-5">
+  <div id="container" class="2xl:pl-5 pt-5 2xl:ml-5">
     <p>
       These are my featured sites, my four website projects. I work with small
       businesses, creatives, and local brands who want a site that’s easy to
@@ -23,11 +23,9 @@ import Jungle from "../sections/Jungle.astro";
       <h2 class="text-3xl">Featured Sites</h2>
       <p>My four website projects</p>
       </div> -->
-    <div id="padding" class="mr-5 2xl:px-[150px] p-1 bg-">
+    <div id="projects" class="mr-5 2xl:px-[150px] p-1 bg-">
       <LC />
       <RQ />
-      <WTBH />
-      <Jungle />
     </div>
   </div>
   <!-- <Gallery /> -->

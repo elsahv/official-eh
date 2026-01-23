@@ -6,17 +6,17 @@ import Card from "../components/shared/Card.astro";
 import Portfolio from "../components/sections/Portfolio.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
 import About from "../components/sections/About.astro";
-const allSites = await Astro.glob("./posts/*.md");
+// import SiteCard from "../components/SiteCard.astro";
+// const allFeaturedSites = await Astro.glob("./websites/*.md");
 ---
 
 <MainLayout>
-  <div id="right-side-container" class="">
-    <Hero />
-    <About />
-    <Portfolio />
+  <Hero />
+  <About />
+  <Portfolio />
 
-    <!-- NOTES SECTION v-->
-    <!-- <div
+  <!-- NOTES SECTION v-->
+  <!-- <div
       id="notes"
       class="flex justify-center bg-teal md:mt-[150px] pb-5 pl-2 text-"
     >
@@ -43,12 +43,10 @@ const allSites = await Astro.glob("./posts/*.md");
         </div>
       </div>
     </div> -->
-  </div>
 
-  <!--* PROJECTS SECTION v-->
+  <!-- * PROJECTS SECTION v
 
   <section id="projects" class="px-5 mt-5">
-    <!-- <Projects />
     <div class="flex 2xl:flex-row flex-col p-5">
       {
         allFeaturedSites.map((work) => (
@@ -62,9 +60,8 @@ const allSites = await Astro.glob("./posts/*.md");
           />
         ))
       }
-    </div> -->
-  </section>
+    </div>
+  </section> -->
 
-  <!--* CONTACT SECTION v-->
   <Contact />
 </MainLayout>

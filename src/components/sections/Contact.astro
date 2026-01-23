@@ -1,30 +1,41 @@
 ---
-import ContactForm from "../ContactForm.astro";
-import CenterPageBanner from "../shared/CenterPageBanner.astro";
+
 ---
 
-<!--   a.ABOUT ME (JOURNEY), b. final cta V -->
-<section id="contact">
-  <!-- <CenterPageBanner BannerTitle="Contact" /> -->
-  <div id="contact-wrapper" class="h-screen md:mt-[100px] mt-1 pt-5 px-5 bg-">
-    <div id="contact-container" class="mt-5 md:p-5 p-0 w-3/4">
-      <div id="contact-form-container" class="bg- lg:px-5 px-0 py-5 mt-5">
-        <p class="pt-1 text-5xl font-semibold">
-          Contact
-          <!-- <span class="">
-                <a
-                  class="font-semibold underline text-munsell"
-                  href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a
-                >
-              </span> -->
+<div id="contact" class="h- mt-[120px] mb-3 p-3 rounded flex justify-center">
+  <div id="contact-container" class="ml-5 w-3/4">
+    <div id="contact-grid" class="rounded flex flex-col">
+      <div id="sq1" class="bg- pt-5">
+        <!-- <h2 class="pt-1 text-4xl text-onyx font-">Contact</h2> -->
+        <p class="text-2xl pl-2">
+          You can reach me by emailing:<span class="">
+            <a
+              class="font-semibold py-1 hover:bg-munsell hover:text-white"
+              href="mailto:elsahovey@gmail.com">elsahvy@gmail.com</a
+            >
+          </span>
         </p>
-        <p class="pl-1 py-2 opacity-85">
-          I am always looking for opportunities to further my skills... and work
-          with other like minded people in tech. If you would like to contact
-          me, you can also find me at <i>sm </i>and <i>sm </i>
+        <p class="bg- md:pl-3 pt-2 pr-5">
+          I am always looking for opportunities to further my skills... and to
+          work with other like-minded people in tech. Email is the best way to
+          get in touch, you can also find me at <span class="underline">
+            <a href="https://www.instagram.com/elsahoveydevdesign/">instagram</a
+            >
+          </span> and <span class="underline">
+            <a href="https://www.linkedin.com/in/elsa-hovey">
+              linkedIn.
+            </a></span
+          >
         </p>
-        <ContactForm />
       </div>
     </div>
   </div>
-</section>
+</div>
+<div
+  id="back-top-top-wrapper"
+  class="bg- flex justify-end w-3/4 ml-[150px] mt-[190px]"
+>
+  <p class="underline">
+    <a href="#hero"> back to top ^ </a>
+  </p>
+</div>
