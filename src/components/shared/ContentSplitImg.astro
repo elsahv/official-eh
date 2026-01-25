@@ -37,7 +37,12 @@ const {
       <div id="imgs-container" class="bg-">
         <a href={websiteUrl}>
           <img id="img1" src={img} alt="" class="" />
-          <img id="img2" src={img2} alt="" class="sq-styles" />
+          <img
+            id="img2"
+            src={img2}
+            alt=""
+            class="bg-[#cbdfbd] opacity-90 border-2 border-black"
+          />
         </a>
       </div>
     </div>
@@ -50,14 +55,14 @@ const {
         <!-- -2) interest -->
         <!-- -3) desire -->
         <!-- -4) action -->
-        <p
+        <h1
           id="attentionParagraph"
-          class="bg- md:text-3xl text-2xl font-bold py-1 sq- text-"
+          class="text- font-semibold md:text-4xl text-2xl font- py-1 sq- text-"
         >
           {attentionParagraph}
-        </p>
+        </h1>
 
-        <div id="padding-left" class="pl-1 space-y-5">
+        <div id="padding-left" class="font-thin pt-1 pl-1 space-y-5">
           <p id="" class="bg-">
             {interestParagraph}
           </p>
@@ -73,7 +78,7 @@ const {
         <div id="btns-container-flex" class="flex space-x-4">
           <button
             id="dynamic-btn"
-            class="opacity-85 hover:opacity-100 sq-styles bg-munsell text-aquamarine"
+            class="opacity-85 hover:opacity-100 sq-styles bg-[#cbdfbd] text-onyx"
           >
             <a href={btn1Link}>
               {btn1}

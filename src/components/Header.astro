@@ -11,15 +11,22 @@ import NavItems from "./NavItems.astro";
     min-[800px]:w-[290px]
   min-[769px]:w-[320px]
    max-[768px]:w-full
-    border-gray-400 md:border-r bg-"
+    border-black md:border-r-2 bg-aliceBlue"
 >
-  <div id="logo" class="2xl:text-9xl lg:text-8xl text-7xl pb-1 opacity-90">
+  <div
+    id="logo"
+    class="2xl:text-9xl lg:text-8xl text-7xl pb-1 opacity-90 text-onyx"
+  >
     <a href="/"> Elsa <br /> Hovey</a>
   </div>
   <div id="sm-icons-container" class="">
     <NavItems />
   </div>
   <div class="bg- min-[768px]:mt-[130px] mb-5">
-    <Image src={ProfilePic} alt="" class="rounded w-3/4 pb-5" />
+    <Image
+      src={ProfilePic}
+      alt=""
+      class="border-2 border-black rounded w-3/4 pb-5"
+    />
   </div>
 </header>

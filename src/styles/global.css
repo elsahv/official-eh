@@ -1,11 +1,11 @@
 html {
-  background-color: #f1f5f9;
-  color: #313638;
+  background-color: #0792a5;
+  color: #007ba5;
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
 
-* {
+* {   
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -256,11 +256,8 @@ section {
 
 
 #about-LC #dynamic-btn {
-  color: black;
-  background: #f1f5f9;
-  border: none;
-  font-weight: 800;
-  text-decoration: underline;
+  color: #FFECD1;
+  background: #15616D;
 } 
 
 
@@ -268,7 +265,20 @@ section {
 #about-LC #contact-btn {
    font-size: 34px;
      color: black;
-  background: #f1f5f9;
-  border: none;
+  background: #cbdfbd;
+} 
+
+
+#about-rq #dynamic-btn {
+  color: #FFECD1;
+  background: #15616D;
+  text-decoration: none;
+} 
+
+
+#about-rq #contact-btn {
+   font-size: 34px;
+     color: black;
+  background: #cbdfbd;
 } 
 
