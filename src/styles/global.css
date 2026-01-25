@@ -1,6 +1,5 @@
 html {
-  background-color: #0792a5;
-  color: #007ba5;
+ 
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
@@ -265,7 +264,7 @@ section {
 #about-LC #contact-btn {
    font-size: 34px;
      color: black;
-  background: #cbdfbd;
+  background: #007ba5;
 } 
 
 
@@ -279,6 +278,6 @@ section {
 #about-rq #contact-btn {
    font-size: 34px;
      color: black;
-  background: #cbdfbd;
+  background: #B18D9B;
 } 
 
