@@ -2,6 +2,8 @@ html {
  
   font-family: sans-serif;
   scroll-behavior: smooth;
+  color: #313638;
+  opacity: 95%;
 }
 
 * {   
@@ -12,7 +14,7 @@ html {
 }
 
 p {
-  font-size: 19px
+  font-size: 19px;  
 }
  
 

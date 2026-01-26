@@ -36,12 +36,17 @@ const {
     <div id="sq1" class="">
       <div id="imgs-container" class="bg-">
         <a href={websiteUrl}>
-          <img id="img1" src={img} alt="" class="" />
+          <img
+            id="img1"
+            src={img}
+            alt=""
+            class="opacity-85 hover:opacity-100"
+          />
           <img
             id="img2"
             src={img2}
             alt=""
-            class="bg-aliceBlue border-2 border-black"
+            class="opacity-85 hover:opacity-100 border border-black"
           />
         </a>
       </div>
@@ -57,7 +62,7 @@ const {
         <!-- -4) action -->
         <h1
           id="attentionParagraph"
-          class="text-aquamarine font-semibold md:text-4xl text-2xl font- py-1 sq- text-"
+          class="font-semibold md:text-4xl text-2xl font- py-1 sq- text-"
         >
           {attentionParagraph}
         </h1>
@@ -71,7 +76,7 @@ const {
             {interestParagraph}
           </p>
           <p class="bg-">
-            <span class="text-carribean font-bold">- </span>{desireParagraph}
+            <span class="font-bold">- </span>{desireParagraph}
           </p>
           <p class="bg-">
             <span class="text-carribean font-bold">- </span>{actionParagraph}
@@ -82,7 +87,7 @@ const {
         <div id="btns-container-flex" class="flex space-x-4">
           <button
             id="dynamic-btn"
-            class="opacity-85 hover:opacity-100 sq-styles bg-aquamarine text-onyx"
+            class="opacity-85 hover:opacity-100 sq-styles bg-aquamarine text-carribean"
           >
             <a href={btn1Link}>
               {btn1}
@@ -90,7 +95,7 @@ const {
           </button>
           <button
             id="contact-btn"
-            class="bg-carribean text-white opacity-85 hover:opacity-100 sq-styles"
+            class="bg-munsell text-white opacity-85 hover:opacity-100 sq-styles"
           >
             <a href={btn2Link}>
               {btn2}
