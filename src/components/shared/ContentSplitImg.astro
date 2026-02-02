@@ -28,49 +28,19 @@ const {
 } = Astro.props as Props;
 ---
 
-<div id="wrapper" class="2xl:my-3 flex justify-center bg-">
-  <div
-    id="flex"
-    class="bg- lg:w-[1300px] bg- flex 2xl:flex-row flex-cols gap-5 2xl:p-5 lg:mt-[50px]"
-  >
-    <div id="sq1" class="">
-      <div id="imgs-container" class="bg-">
-        <a href={websiteUrl}>
-          <img
-            id="img1"
-            src={img}
-            alt=""
-            class="opacity-85 hover:opacity-100"
-          />
-          <img
-            id="img2"
-            src={img2}
-            alt=""
-            class="opacity-85 hover:opacity-100 border border-black"
-          />
-        </a>
-      </div>
-    </div>
-    <div id="sq2" class="pt-5 mt- 2xl:px-5 px-3">
-      <div
-        id="content"
-        class="bg- flex flex-col lg:text-xl text-lg md:p-1 mt-5 mb-5"
-      >
+<div id="wrapper" class="p-1">
+  <div id="" class="">
+    <div id="" class="2xl:p-5 px-3">
+      <div id="content" class="bg- flex flex-col md:p-1 mb-5">
         <!-- -1) attention -->
         <!-- -2) interest -->
         <!-- -3) desire -->
         <!-- -4) action -->
-        <h1
-          id="attentionParagraph"
-          class="font-semibold md:text-4xl text-2xl font- py-1 sq- text-"
-        >
+        <h1 id="attentionParagraph" class="md:text-4xl text-2xl my-5">
           {attentionParagraph}
         </h1>
 
-        <div
-          id="padding-left"
-          class="text- aliceBlue font-thin pt-1 pl-1 space-y-5"
-        >
+        <div id="padding-left" class="text-xl font-thin pt-1 pl-1 space-y-10">
           <p id="" class="bg-">
             <span class="text-carribean font-bold">- </span>
             {interestParagraph}
@@ -83,21 +53,22 @@ const {
           </p>
         </div>
       </div>
-      <div id="btns-wrapper" class="pl-2">
+      <div id="btns-wrapper" class="pl-2 mt-[50px]">
         <div id="btns-container-flex" class="flex space-x-4">
-          <button
+          <!-- <button
             id="dynamic-btn"
-            class="opacity-85 hover:opacity-100 sq-styles bg-aquamarine text-carribean"
+            class="text-cerulean opacity-85 hover:opacity-100 sq-styles bg- text-"
           >
             <a href={btn1Link}>
               {btn1}
             </a>
-          </button>
+          </button> -->
+
           <button
             id="contact-btn"
-            class="bg-munsell text-white opacity-85 hover:opacity-100 sq-styles"
+            class="bg-cerulean text-aquamarine opacity-85 hover:opacity-100 sq-styles"
           >
-            <a href={btn2Link}>
+            <a href="mailto:elsahovey@gmail.com">
               {btn2}
             </a>
           </button>

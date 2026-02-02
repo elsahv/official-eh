@@ -8,60 +8,58 @@ import Portfolio from "../components/sections/Portfolio.astro";
 import About from "../components/sections/About.astro";
 // import SiteCard from "../components/SiteCard.astro";
 // const allFeaturedSites = await Astro.glob("./websites/*.md");
+
+import { IoOpenOutline } from "react-icons/io5";
 ---
 
 <MainLayout>
-  <Hero />
-  <About />
-  <Portfolio />
-
-  <!-- NOTES SECTION v-->
-  <!-- <div
-      id="notes"
-      class="flex justify-center bg-teal md:mt-[150px] pb-5 pl-2 text-"
-    >
-      <div id="blog-container" class="">
-        <CenterPageBanner BannerTitle="Notes!" />
-        <div
-          id="grid"
-          class="bg- pb-5 my-5 pt-5 pl-[45px] pr-[55px] grid md:grid-cols-2 grid-cols-1 gap-12"
-        >
-          {
-            allSites.map((site) => (
-              <Card
-                title={site.frontmatter.title}
-                image={site.frontmatter.image?.url}
-                alt={site.frontmatter.title}
-                pubDate={site.frontmatter.pubDate}
-                testItem1={site.frontmatter.testItem1}
-                category1={site.frontmatter.category1}
-                category2={site.frontmatter.category2}
-                url={site.url}
-              />
-            ))
-          }
-        </div>
+  <div class="h- bg- grid grid-cols-4">
+    <div class="flex flex-col -">
+      <div id="profile-img" class="">
+        <img
+          src="https://dl.dropboxusercontent.com/scl/fi/phq735ow5p9eqhrbfemme/eh-img.jpg?rlkey=cc6j3utq3lh9fayc1pbais1pe&st=e7yfqtos&dl=0"
+          alt=""
+          class="rounded-md border border-rosyBrown mt-[70px] ml-5 w-[270px]"
+        />
       </div>
-    </div> -->
+      <div id="RQ" class="bg- mt-[100px]">
+        <a href="https://therunningquail.com">
+          <div id="open-icon" class="flex justify-end pr-1">
+            <IoOpenOutline />
+          </div>
 
-  <!-- * PROJECTS SECTION v
-
-  <section id="projects" class="px-5 mt-5">
-    <div class="flex 2xl:flex-row flex-col p-5">
-      {
-        allFeaturedSites.map((work) => (
-          <SiteCard
-            title={work.frontmatter.title}
-            image={work.frontmatter.image.url}
-            alt={work.frontmatter.image.alt}
-            url={work.url}
-            testItem1={work.frontmatter.testItem1}
-            websiteNumber={work.frontmatter.websiteNumber}
+          <img
+            src="https://dl.dropboxusercontent.com/scl/fi/a2utea057cl49xqqjf1wi/rq.png?rlkey=afhdtqboraezuio8uffczd44n&st=c5haqm9w&dl=0"
+            alt=""
+            class="rounded-md border border-rosyBrown mr-[150px]"
           />
-        ))
-      }
+        </a>
+      </div>
     </div>
-  </section> -->
+    <div class="px-5 mt-[150px] col-span-2 bg-">
+      <Hero />
+    </div>
+    <div class="flex flex-col space-y-32">
+      <div id="computer-img" class="">
+        <img
+          src="https://dl.dropboxusercontent.com/scl/fi/wgfi7eat7rydozfsyz0sf/20210416_091132_HDR.jpg?rlkey=zza6btn86hdnxep9732n99fid&st=9opapzud&dl=0 "
+          alt=""
+          class="rounded-md border border-rosyBrown ml-5 mb-5"
+        />
+      </div>
 
-  <Contact />
+      <div id="LC" class="">
+        <a href="https://laughingcoyote.dev">
+          <div id="open-icon" class="ml-1">
+            <IoOpenOutline />
+          </div>
+          <img
+            src="https://dl.dropboxusercontent.com/scl/fi/ops5ab6hemi29lzdn7id6/rq-1-28-26.png?rlkey=armttwu0ibujkc27om74psgf4&st=s0phhmdw&dl=0"
+            alt=""
+            class="rounded-md border border-rosyBrown mb-[50px]"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
 </MainLayout>
