@@ -1,66 +1,15 @@
 ---
-import Hero from "../components/sections/Hero.astro";
-import Contact from "../components/sections/Contact.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-// import Card from "../components/shared/Card.astro";
-import Portfolio from "../components/sections/Portfolio.astro";
-// import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import About from "../components/sections/About.astro";
-// import SiteCard from "../components/SiteCard.astro";
+import LeftColumn from "../layouts/LeftColumn.astro";
+import MidColumn from "../layouts/MidColumn.astro";
+import RightColumn from "../layouts/RightColumn.astro";
 // const allFeaturedSites = await Astro.glob("./websites/*.md");
-
-import { IoOpenOutline } from "react-icons/io5";
-import MySkills from "../components/sections/MySkills.astro";
 ---
 
 <MainLayout>
   <div id="grid" class="bg- grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1">
-    <div id="left-col" class="flex flex-col bg-">
-      <div id="profile-img" class="">
-        <img
-          src="https://dl.dropboxusercontent.com/scl/fi/phq735ow5p9eqhrbfemme/eh-img.jpg?rlkey=cc6j3utq3lh9fayc1pbais1pe&st=e7yfqtos&dl=0"
-          alt=""
-          class="rounded-md border border-rosyBrown mt-[70px] ml-5 w-[270px]"
-        />
-      </div>
-      <div id="RQ" class="bg- mr-5 2xl:mt-[100px]">
-        <a href="https://therunningquail.com">
-          <div id="open-icon" class="flex justify-end pr-1">
-            <IoOpenOutline />
-          </div>
-
-          <img
-            src="https://dl.dropboxusercontent.com/scl/fi/a2utea057cl49xqqjf1wi/rq.png?rlkey=afhdtqboraezuio8uffczd44n&st=c5haqm9w&dl=0"
-            alt=""
-            class="rounded-md border border-rosyBrown w-2/"
-          />
-        </a>
-      </div>
-    </div>
-    <div id="mid-col" class="md:mt-[150px] 2xl:col-span-2 col-span-1 bg-">
-      <Hero />
-    </div>
-    <div
-      id="right-col"
-      class="flex 2xl:flex-col md:flex-row flex-col 2xl:space-y-32 2xl:col-span-1 md:col-span-2 col-span-1 bg-"
-    >
-      <div
-        class="ml-5 pl-5 pb-5 text- bg-munsell text-white border-black rounded-bl border-b border-l w-full"
-      >
-        <MySkills />
-      </div>
-      <div id="LC" class="ml-[50px]">
-        <a href="https://laughingcoyote.dev">
-          <div id="open-icon" class="ml-1">
-            <IoOpenOutline />
-          </div>
-          <img
-            src="https://dl.dropboxusercontent.com/scl/fi/ops5ab6hemi29lzdn7id6/rq-1-28-26.png?rlkey=armttwu0ibujkc27om74psgf4&st=s0phhmdw&dl=0"
-            alt=""
-            class="rounded-md border border-rosyBrown 2xl:mb-[50px] mb-[100px]"
-          />
-        </a>
-      </div>
-    </div>
+    <LeftColumn />
+    <MidColumn />
+    <RightColumn />
   </div>
 </MainLayout>
