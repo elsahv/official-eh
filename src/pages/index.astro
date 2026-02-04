@@ -10,11 +10,12 @@ import About from "../components/sections/About.astro";
 // const allFeaturedSites = await Astro.glob("./websites/*.md");
 
 import { IoOpenOutline } from "react-icons/io5";
+import MySkills from "../components/sections/MySkills.astro";
 ---
 
 <MainLayout>
-  <div class="h- bg- grid grid-cols-4">
-    <div class="flex flex-col -">
+  <div id="grid" class="bg- grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1">
+    <div id="left-col" class="flex flex-col bg-">
       <div id="profile-img" class="">
         <img
           src="https://dl.dropboxusercontent.com/scl/fi/phq735ow5p9eqhrbfemme/eh-img.jpg?rlkey=cc6j3utq3lh9fayc1pbais1pe&st=e7yfqtos&dl=0"
@@ -22,7 +23,7 @@ import { IoOpenOutline } from "react-icons/io5";
           class="rounded-md border border-rosyBrown mt-[70px] ml-5 w-[270px]"
         />
       </div>
-      <div id="RQ" class="bg- mt-[100px]">
+      <div id="RQ" class="bg- mr-5 2xl:mt-[100px]">
         <a href="https://therunningquail.com">
           <div id="open-icon" class="flex justify-end pr-1">
             <IoOpenOutline />
@@ -31,24 +32,24 @@ import { IoOpenOutline } from "react-icons/io5";
           <img
             src="https://dl.dropboxusercontent.com/scl/fi/a2utea057cl49xqqjf1wi/rq.png?rlkey=afhdtqboraezuio8uffczd44n&st=c5haqm9w&dl=0"
             alt=""
-            class="rounded-md border border-rosyBrown mr-[150px]"
+            class="rounded-md border border-rosyBrown w-2/"
           />
         </a>
       </div>
     </div>
-    <div class="px-5 mt-[150px] col-span-2 bg-">
+    <div id="mid-col" class="md:mt-[150px] 2xl:col-span-2 col-span-1 bg-">
       <Hero />
     </div>
-    <div class="flex flex-col space-y-32">
-      <div id="computer-img" class="">
-        <img
-          src="https://dl.dropboxusercontent.com/scl/fi/wgfi7eat7rydozfsyz0sf/20210416_091132_HDR.jpg?rlkey=zza6btn86hdnxep9732n99fid&st=9opapzud&dl=0 "
-          alt=""
-          class="rounded-md border border-rosyBrown ml-5 mb-5"
-        />
+    <div
+      id="right-col"
+      class="flex 2xl:flex-col md:flex-row flex-col 2xl:space-y-32 2xl:col-span-1 md:col-span-2 col-span-1 bg-"
+    >
+      <div
+        class="ml-5 pl-5 pb-5 text- bg-munsell text-white border-black rounded-bl border-b border-l w-full"
+      >
+        <MySkills />
       </div>
-
-      <div id="LC" class="">
+      <div id="LC" class="ml-[50px]">
         <a href="https://laughingcoyote.dev">
           <div id="open-icon" class="ml-1">
             <IoOpenOutline />
@@ -56,7 +57,7 @@ import { IoOpenOutline } from "react-icons/io5";
           <img
             src="https://dl.dropboxusercontent.com/scl/fi/ops5ab6hemi29lzdn7id6/rq-1-28-26.png?rlkey=armttwu0ibujkc27om74psgf4&st=s0phhmdw&dl=0"
             alt=""
-            class="rounded-md border border-rosyBrown mb-[50px]"
+            class="rounded-md border border-rosyBrown 2xl:mb-[50px] mb-[100px]"
           />
         </a>
       </div>
