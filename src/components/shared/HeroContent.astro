@@ -1,0 +1,44 @@
+---
+export interface Props {
+  whatIsIt: string;
+  whoItsFor: string;
+  howDoesItHelp: string;
+  ctaBtn: string;
+  testImg: string;
+}
+
+const { whatIsIt, whoItsFor, howDoesItHelp, ctaBtn, testImg } =
+  Astro.props as Props;
+---
+
+<div id="card" class="border border-black rounded-md pl-5 pt-5 mt-5">
+  <div class="grid md:grid-cols-2 grid-cols-1 gap-10">
+    <div id="left-sq" class="pl-5 pt-5 space-y-10">
+      <h1 id="title" class="text-7xl font-bold my-4">
+        {whatIsIt}
+      </h1>
+
+      <div id="padding-left" class="text-xl font-thin pt-1 pl-1 space-y-10">
+        <p id="light-green-first-paragraph" class="">
+          {whoItsFor}
+        </p>
+        <p id="orange-second-paragraph" class="">
+          {howDoesItHelp}
+        </p>
+      </div>
+      <button
+        class="bg-primaryBtn text-neutralBase1 py-1 px-2 rounded-lg border border-black text-xl"
+      >
+        <a href="/contact"> {ctaBtn}</a></button
+      >
+    </div>
+    <div
+      id="hero-img-wrapper"
+      class="rotate-[8deg]
+           rounded-2xl
+           shadow-2xl mt-5"
+    >
+      <img src={testImg} alt="" class="w- border-2 border-black rounded-3xl" />
+    </div>
+  </div>
+</div>

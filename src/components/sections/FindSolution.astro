@@ -1,0 +1,79 @@
+---
+// const first2Items = [
+//   {
+//     title: "Squeeze page",
+//     body: "Client signs up, decides package ",
+//     href: "/#pricing-section",
+//     linkLabel: "",
+//   },
+//   {
+//     title: "LATEST ",
+//     body: "This is where I take revised, final draft",
+//     href: "/#creative-works",
+//     linkLabel: "see creative gallery",
+//   },
+// ];
+
+const second2Items = [
+  {
+    title: "ABOUT",
+    body: "final review and Q&A--> move local website to live server",
+    href: "/#contact-block",
+    linkLabel: "see contact",
+  },
+  {
+    title: "ABOUT",
+    body: "final review and Q&A--> move local website to live server",
+    href: "/#contact-block",
+    linkLabel: "see contact",
+  },
+];
+
+import DynamicGrid from "../shared/DynamicGrid.astro";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
+---
+
+<section id="find-solution" class="primaryBgTeal mt-5 px-[145.5] pb-6.25">
+  <div
+    id="find-solution-container"
+    class="flex justify-center md:mx-5 mt-5 2xl:px-5 bg-"
+  >
+    <div id="" class="px-5 mx-5">
+      <CenterPageBanner
+        bannerTitle="Find Solution"
+        bannerParagraph="this is the paragraph, not sure if I should turn this into 2 copies"
+      />
+      <div id="find-solution-grid">
+        <DynamicGrid items={second2Items} />
+      </div>
+      <div id="entire-wrapper" class="bg- mt-5 pt-5">
+        <!-- <DynamicGrid items={first2Items} /> -->
+        <div class="">
+          <div id="center-wrapper">
+            <div id="img-wrapper" class="bg- my-5 py-5 grid md:grid-cols-2">
+              <div id="left-sq" class="bg- pt-13.75 mt-5 px-4">
+                <h2 class="lg:text-5xl text-3xl">title</h2>
+                <p class="mt-5">
+                  lots of space in left sq... ideal for customization? Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Modi sequi
+                  vel temporibus iure magni dicta laudantium illum sit magnam,
+                  nisi ratione? Recusandae mollitia illo maxime iure dicta quasi
+                  magni necessitatibus!
+                </p>
+              </div>
+
+              <div id="right-sq">
+                <img
+                  src="https://dl.dropboxusercontent.com/scl/fi/2tecr2ri0uajxg0isvhk8/lc-newScreen.png?rlkey=943bgvclb5xj13s3dh96myurr&st=w9vp404m&dl=0
+"
+                  alt=""
+                  class="p-5 border border-black"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

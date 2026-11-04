@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-dmserif: "DM Serif", serif;
+  --font-com: "Comfortaa", cursive;
+
+  /* Custom colors */
+  --color-websiteFocus: #15616D;
+  --color-complimentryTextColor: #7FFFD4;
+  --color-primaryBtn: #0792a5;
+  --color-neutralBase1: #fbf2c0;
+  --color-neutralBase2: #FFECD1;
+  --color-test1: #f88379;
+  --color-test2: lightgreen;
+  --color-orange: #FF7F50;
+}
+
+ 
+html {
+    /* background-color: #fdf0d5; */
+ font-family: "Kode Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: #353535;
+}
+
+
+p {
+  /* color: teal; */
+  font-size: 25px; 
+}
+
+section {
+  padding-top: 70px;
+  padding-left: 105px;
+  padding-right: 105px;
+}
+
+
+@media (max-width: 520px) {
+  section {
+    padding:15px;
+  }
+}
+
+
+
+.sq-styles {
+    border: black 1px solid;
+}
+
+
+#address-key-problem-container #sq{
+  /* background: teal;
+  color: white; */
+}
+
+#find-solution-container #sq{
+}
+
+
+.primaryBgTeal {
+  background: teal;
+  color: aquamarine;
+}
+
+
+#second-items #sq {
+  background: #fdf0d5;
+  color: black;
+}
+
+
+#find-solution-grid #title{
+  color: light;
+}
+
+#find-solution-grid #sentence{
+  color: #f4effa;
+}
+
+#section-intro-container{
+  padding-top:215px;
+}

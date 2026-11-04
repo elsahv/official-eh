@@ -1,0 +1,21 @@
+---
+export interface Props {
+  title: string;
+  paragraph: string;
+}
+
+const { title, paragraph } = Astro.props as Props;
+---
+
+<div id="" class="p-5">
+  <div id="intro-section" class="p-5 opacity-80 mt-[75px]">
+    <div class="pb-2 mt-5">
+      <h1 class="text-4xl font-semibold">{title}</h1>
+
+      <!-- KEEP HEADLINE, I REALLY LIKE THIS V -->
+      <p class="pl-1 pt-1 opacity-65">
+        {paragraph}
+      </p>
+    </div>
+  </div>
+</div>

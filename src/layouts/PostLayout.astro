@@ -1,0 +1,47 @@
+---
+import Footer from "../components/Footer.astro";
+// import BackBtn from "../components/BackBtn.astro";
+import MainLayout from "./MainLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<!-- !NOTE: THIS WAS ORIGINALLY WEBSITE PACKAGE MD, WE ARE NOW USING IT FOR CASE STUDY MD -->
+<MainLayout>
+  <div id="markdown-post" class="text-lg mx-5 px-5 flex justify-center">
+    <div
+      id="right-side-markdown-container"
+      class="bg- h- w-3/ overflow-y-scroll overflow-x-hidden"
+    >
+      <div class="">
+        <div class="">
+          <div class="mt-5 pt-5">
+            <div id="" class="bg-">
+              <div id="title-banner" class="">
+                <h1
+                  class="2xl:text-5xl md:text-4xl text-3xl pb-2 pt-2 font-semibold"
+                >
+                  {frontmatter.postTitle}
+                </h1>
+              </div>
+            </div>
+
+            <p>{frontmatter.testItem1}</p>
+            <div id="images-wrapper" class="bg-">
+              <a href={frontmatter.websiteUrl} target="_blank" rel="noreferrer">
+                <img
+                  id="PRIMARY-image"
+                  src={frontmatter.image.url}
+                  alt=""
+                  class="opacity-80 border border-rosyBrown drop-shadow-3xl rounded mt-[50px] col-span-2"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 my-5 py-[55px] pt-2 opacity-80 text-lg">
+        <slot />
+      </div>
+    </div>
+  </div>
+</MainLayout>

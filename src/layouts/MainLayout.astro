@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import LeftPanel from "../components/LeftPanel.astro";
+import Header from "../components/Header.astro";
+---
+
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.js"
+      integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://kit.fontawesome.com/f75d956e91.js"
+      crossorigin="anonymous"></script>
+    <title>GP to EH</title>
+  </head>
+
+  <!--  LEFT SIDE-->
+
+  <LeftPanel />
+
+  <!--  RIGHT SIDE-->
+
+  <div
+    id="RIGHT-PANEL"
+    class="text- medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
+  >
+    <div id="right-panel-wrapper" class="p-5 mr-5">
+      <body id="right-panel-container" class="bg rounded-bl">
+        <slot />
+      </body>
+    </div>
+  </div>
+
+  <!-- <Footer /> -->
+
+
+</html>

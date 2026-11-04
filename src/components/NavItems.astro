@@ -1,0 +1,35 @@
+---
+import Image from "astro/components/Image.astro";
+import githubIcon from "../images/github.png";
+import linkedInIcon from "../images/linkedin.png";
+import emailIcon from "../images/email.png";
+
+const items = [
+  {
+    icon: githubIcon,
+    link: "/",
+  },
+  {
+    icon: linkedInIcon,
+    link: "",
+  },
+  {
+    icon: emailIcon,
+    link: "/contact",
+  },
+];
+---
+
+<nav id="nav-items" class="py-1 mt-2 ml-2">
+  <div class="bg- pl-2 opacity-90 text- flex justify-left">
+    <div class="bg- border-t border-b border-carribean flex space-x-4 py-2">
+      {
+        items.map((item) => (
+          <a href={item.link}>
+            <Image src={item.icon} alt="" height="30" width="30" class="bg-" />
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</nav>

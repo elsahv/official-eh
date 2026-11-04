@@ -1,0 +1,42 @@
+---
+const items4 = [
+  {
+    title: "Problem title",
+    body: "Client signs up, decides package ",
+    href: "/#pricing-section",
+    linkLabel: "",
+  },
+  {
+    title: "Problem title",
+    body: "This is where I take revised, final draft",
+    href: "/#creative-works",
+    linkLabel: "see creative gallery",
+  },
+  {
+    title: "Problem title",
+    body: "set up vercel  ",
+    href: "/#AboutBlock",
+    linkLabel: "see tools used (aboutMe)",
+  },
+  {
+    title: "Problem title",
+    body: "final review and Q&A--> move local website to live server",
+    href: "/#contact-block",
+    linkLabel: "see contact",
+  },
+];
+
+import DynamicGrid from "../shared/DynamicGrid.astro";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
+---
+
+<section id="address-key-problem" class="mt-47.5 flex justify-center">
+  <div id="address-key-problem-container" class="">
+    <!-- //TODO: FIGURE IN AIDA -->
+    <CenterPageBanner
+      bannerTitle="Address Key Problem"
+      bannerParagraph="this is supporting sentence for address key problem section"
+    />
+    <DynamicGrid items={items4} />
+  </div>
+</section>
