@@ -1,0 +1,35 @@
+---
+export interface Props {
+  title: string;
+  paragraph: string;
+  firstLink: string;
+  secondLink: string;
+  thirdLink: string;
+}
+
+const { title, paragraph, firstLink, secondLink, thirdLink } =
+  Astro.props as Props;
+---
+
+<div id="contact" class="border-t border-black md:mt-30 2xl:mb-3 2xl:p-3">
+  <div id="contact-container" class="2xl:ml-5">
+    <div id="contact-grid" class="rounded flex flex-col">
+      <div id="" class="bg- md:pt-5">
+        <p class="pl-2 bg-">
+          {title}
+          <a class="font-semibold py-1 hover:underline" href={firstLink}
+            >elsahvy@gmail.com</a
+          >
+          {paragraph}
+        </p>
+
+        <p class="bg- md:pl-3 pt-2 pr-5">
+          You can also find me at
+          <a class="underline" href={secondLink}>instagram</a>
+          and
+          <a href={thirdLink}> linkedIn. </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

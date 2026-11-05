@@ -1,16 +1,13 @@
 ---
 import Header from "./Header.astro";
-import CTAcontent from "./shared/CTAcontent.astro";
+import ContactCTA from "./shared/ContactCTA.astro";
 ---
 
 <div
   id="LEFT-PANEL-wrapper"
-  class="- h-full md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+  class="border-r-2 border-black h-full md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
 >
-  <div
-    id="LEFT-PANEL-container"
-    class="- py-5 2xl:pl-5 2xl:pr-7.5 pl-1 pr-5 - border-r-2 border-black"
-  >
+  <div id="LEFT-PANEL-container" class="- py-5 2xl:pl-5 2xl:pr-7.5 pl-1 pr-5">
     <Header />
     <div id="about-me-container" class="px-3 pt-5">
       <!-- <p class="">not sure what to put here yet...</p> -->
@@ -23,5 +20,9 @@ import CTAcontent from "./shared/CTAcontent.astro";
       />
     </div>
   </div>
-  <CTAcontent />
+  <!-- <ContactCTA /> -->
+  <img
+    src="https://dl.dropboxusercontent.com/scl/fi/pehvq814t5715ui9iqej9/1ehLogo.jpg?rlkey=bo704jqabh1v8j0kcagmp6yrz&st=xoooq9c3&dl=0"
+    alt=""
+  />
 </div>

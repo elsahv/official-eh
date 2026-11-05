@@ -1,7 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Hero from "../components/sections/Hero.astro";
-// import TableContents from "../components/sections/TableContents.astro";
 
 const lcPosts = Object.values(
   import.meta.glob("../pages/lcPosts/*.md", { eager: true }),
@@ -13,7 +12,7 @@ const wtbhPosts = Object.values(
 
 import SectionIntro from "../components/shared/SectionIntro.astro";
 import Card from "../components/Card.astro";
-import CTAcontent from "../components/shared/CTAcontent.astro";
+import ContactCTA from "../components/shared/ContactCTA.astro";
 
 // import Hero from "../components/sections/Hero.astro";
 // import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
@@ -25,7 +24,7 @@ import CTAcontent from "../components/shared/CTAcontent.astro";
 <MainLayout>
   <Hero />
 
-  <div id="section-intro-container" class="uppercase">
+  <div id="section-intro-container" class="uppercase border-gray-600 border-t">
     <SectionIntro
       bannerTitle="Laughing Coyote Dev"
       bannerParagraph="latests from a freelance site"
@@ -56,7 +55,6 @@ import CTAcontent from "../components/shared/CTAcontent.astro";
       bannerParagraph="most recent by a nutrition blog"
     />
   </div>
-  <!-- <h2>Writing to Better Health</h2> -->
   <div
     id="expand-on-my-websites-card"
     class="bg grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pl-2 pb-5 mx-13.75"
@@ -76,5 +74,5 @@ import CTAcontent from "../components/shared/CTAcontent.astro";
       ))
     }
   </div>
-  <CTAcontent />
+  <ContactCTA />
 </MainLayout>

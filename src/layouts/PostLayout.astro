@@ -5,14 +5,13 @@ import MainLayout from "./MainLayout.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<!-- !NOTE: THIS WAS ORIGINALLY WEBSITE PACKAGE MD, WE ARE NOW USING IT FOR CASE STUDY MD -->
 <MainLayout>
   <div id="markdown-post" class="text-lg mx-5 px-5 flex justify-center">
     <div
       id="right-side-markdown-container"
-      class="bg- h- w-3/ overflow-y-scroll overflow-x-hidden"
+      class="border-b border-black h- w-3/ overflow-y-scroll overflow-x-hidden"
     >
-      <div class="">
+      <div class="mb-12.5">
         <div class="">
           <div class="mt-5 pt-5">
             <div id="" class="bg-">
@@ -26,20 +25,23 @@ const { frontmatter } = Astro.props;
             </div>
 
             <p>{frontmatter.testItem1}</p>
-            <div id="images-wrapper" class="bg-">
+            <div id="images-wrapper" class="">
               <a href={frontmatter.websiteUrl} target="_blank" rel="noreferrer">
                 <img
                   id="PRIMARY-image"
                   src={frontmatter.image.url}
                   alt=""
-                  class="opacity-80 border border-rosyBrown drop-shadow-3xl rounded mt-[50px] col-span-2"
+                  class="opacity-80 border border-rosyBrown drop-shadow-3xl rounded mt-12.5 col-span-2 w-"
                 />
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="mt-5 my-5 py-[55px] pt-2 opacity-80 text-lg">
+      <div
+        id="post-slot-container"
+        class="border-gray-600 border-t my-5 py-13.75 pt-2 opacity-80 text-lg pl-12.5 pr-4"
+      >
         <slot />
       </div>
     </div>

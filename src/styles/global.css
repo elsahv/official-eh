@@ -28,7 +28,7 @@ html {
 
 p {
   /* color: teal; */
-  font-size: 25px; 
+  font-size: 19px; 
 }
 
 section {
@@ -82,4 +82,17 @@ section {
 
 #section-intro-container{
   padding-top:215px;
+}
+
+post-slot-container {
+  
+}
+
+/* 11/5/26 v */
+ 
+
+#contact a {
+  color: underline;
+  padding-left: 7px;
+  padding-right: 7px;
 }
